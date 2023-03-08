@@ -7,6 +7,7 @@ Hacer “capturas de pantalla” y copiar comandos utilizados en un Documento de
 Hoy (y resto de materia) utilizaremos la máquina virtual
 
 **Usuario:	bioinformatica**
+
 **password:	bioinformatica**
 
 En esta máquina virtual están instalado el sistema operativo Lubuntu que es el entorno que se utilizará en la materia para realizar todos los TPs. Los alumnos irán instalando los programas necesarios para cada TP y descargando los archivos con el fin que se familiaricen con el entorno, la línea de comandos y el modo de trabajar en bioinformática en un entorno Linux. Los archivos necesarios para los TPs se podrán descargar desde la carpeta Bioinformática_UADE_2020 compartida en OneDrive o desde sus repositorios originales.
