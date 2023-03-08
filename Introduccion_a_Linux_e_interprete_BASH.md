@@ -1,3 +1,5 @@
+## TP 1: Comandos en Linux y Secuencias
+
 Primero algunas aclaraciones sobre cómo vamos a trabajar en los TPs
 
 Contestar las preguntas con las respuestas concretas obtenidas de la “terminal” más alguna oracion en tus palabras.
