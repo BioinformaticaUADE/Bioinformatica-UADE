@@ -347,4 +347,4 @@ fastacomposition -f coronavirus\_aa.fasta -s \> composition.txt
 
 1. **Qué información le brinda?**
 
-`Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023`
+`Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023.....................................................................................`
