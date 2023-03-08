@@ -2,10 +2,8 @@ Primero algunas aclaraciones sobre cómo vamos a trabajar en los TPs!!!!!!!
 
 Contestar las preguntas con las respuestas concretas obtenidas de la “terminal” más alguna oracion en tus palabras.
 
-***************************
     Hacer “capturas de pantalla” y copiar comandos utilizados en un Documento de Texto así será más fácil cuando tengan que entregar TP final al finalizar cursada. 
 (ver comando ‘history’ en terminal)
-***********************
 
 Hoy (y resto de materia) utilizaremos la máquina virtual 
 Usuario:	bioinformatica
