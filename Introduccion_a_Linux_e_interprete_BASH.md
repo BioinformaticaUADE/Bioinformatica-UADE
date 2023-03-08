@@ -133,7 +133,7 @@ grep [opciones] patrón \<nombre archivo\>
 
 **Entonces, para contar las secuencias ejecutamos:**
 
-grep -c "\>" human\_proteome.faa
+`grep -c "\>" human\_proteome.faa`
 
 o
 
