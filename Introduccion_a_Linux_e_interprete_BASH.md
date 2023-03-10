@@ -36,14 +36,14 @@ Bash contiene decenas de comandos que pueden escribirse para ejecutarse en la te
 
 | **Comando** | **Acción** | **Comando** | **Acción** |
 | --- | --- | --- | --- |
-|  **ls**  | List_ar contenidos | _ **head** _ | Ver 10 primeras líneas |
-|  **cd**  | Change__dir_ectorio | _ **tail** _ | Ver 10 últimas líneas |
-|  **mkdir**  | Make__dir_ectorio | _ **nano ó vim** _ | editores de texto |
-|  **pwd**  | Path to Working Directory_ | _ **cp** _ | Copiar |
-|  **cat**  | Con_cat_enate & show | _ **mv** _ | Mover o renombrar |
-|  **more**  | Muestra página por página | **|** | Un _pipe_, para _pipelines_ |
-|  **grep**  | Buscar _strings_ en textos | _ **wc** _ | _Word Count_ |
-|  **wget**  | Descarga de la web | _ **gunzip** _ | Descomprime archivos .gz |
+|  **ls**  | Listar contenidos | **head**  | Ver 10 primeras líneas |
+|  **cd**  | Change directorio | **tail**  | Ver 10 últimas líneas |
+|  **mkdir**  | Make directorio | **nano ó vim**  | editores de texto |
+|  **pwd**  | Path to Working Directory |  **cp**  | Copiar |
+|  **cat**  | Concatenate & show | **mv**  | Mover o renombrar |
+|  **more**  | Muestra página por página | **|** | Un pipe, para pipelines |
+|  **grep**  | Buscar strings en textos |  **wc**  | Word Count |
+|  **wget**  | Descarga de la web | **gunzip**  | Descomprime archivos.gz |
 
 Entrar a la terminal y ejecutar el comando:
 
