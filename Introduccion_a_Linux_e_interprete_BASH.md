@@ -120,7 +120,7 @@ El comando " **wc**" (wc = word count) muestra las líneas, palabras y caractere
 ```
 wc human_proteome.faa
 ```
-> 2 **¿Cuántas proteínas hay en el archivo?**
+> 2. **¿Cuántas proteínas hay en el archivo?**
 
 Para esta operación se puede usar el comando **"grep":**
 
@@ -142,9 +142,9 @@ grep -c '^>' human_proteome.faa
 ```
 Donde "-c" es la opción del comando " **grep"** que muestra la cantidad de líneas coincidentes y "^" indica: **"Empieza con".** De esta manera el comando busca una expresión regular o patrón (_regular expression_) que en este caso indica que estamos buscando "\>" al principio de la línea solamente.
 
-> 3 **¿Por qué contamos cuántos caracteres "\>" hay en el archivo para saber la cantidad de proteínas?**
+> 3. **¿Por qué contamos cuántos caracteres "\>" hay en el archivo para saber la cantidad de proteínas?**
 
-> 4 **¿Cuántas ATP-binding proteins hay en el archivo? ¿Cómo realiza esto? ¿Que hace "grep"?**
+> 4. **¿Cuántas ATP-binding proteins hay en el archivo? ¿Cómo realiza esto? ¿Que hace "grep"?**
 
 Podemos usar **"grep"** nuevamente, ejecutamos:
 ```
@@ -154,7 +154,7 @@ Para contarlas:
 ```
 grep -c "ATP-binding" human_proteome.faa
 ```
-> 5 **¿Como hariamos para que lo que se ve por pantalla sea escrito a un nuevo archivo?**
+> 5. **¿Como hariamos para que lo que se ve por pantalla sea escrito a un nuevo archivo?**
 
 **Ver ayuda en URL:** [**http://linuxcommand.org/lc3\_lts0070.php**](http://linuxcommand.org/lc3_lts0070.php)
 
@@ -164,7 +164,7 @@ grep "ATP-binding" human_proteome.faa > atp_binding.headers
 ```
 Nota: El carácter **"\>"** indica el archivo de salida donde se redirige el resultado de la operación ejecutada por el comando_ **"grep"** _
 
-> 6 **¿Cómo hacemos para que la salida de pantalla pase a ser la entrada a un nuevo comando?**
+> 6. **¿Cómo hacemos para que la salida de pantalla pase a ser la entrada a un nuevo comando?**
 
 El _**"|" (pipe)**_ toma la salida del comando ejecutado a su izquierda y la direcciona como entrada del comando a su derecha (concatenación de comandos).
 
@@ -248,7 +248,7 @@ Este paso puede demorar unos minutos. Luego seleccionamos Y (yes) y comenzará l
 ```
 conda info –envs
 ```
-> 7 **¿Que enviroments encuentra instalados?**
+> 7. **¿Que enviroments encuentra instalados?**
 
 Para activar el enviroment analisis\_de\_secuencias ejecutamos:
 ```
@@ -266,15 +266,15 @@ grep "LL.ND" human_proteome.faa
 ```
 Nota: El carácter "." Significa wildcard: puede ser cualquier carácter
 
-> 8 **¿Cuántas secuencias tienen ese patrón?**
+> 8. **¿Cuántas secuencias tienen ese patrón?**
 
-> 9 **El comando "** _ **grep"** _ **contesta la pregunta de cuantas secuencias tienen ese patrón? ¿o no? ¿De qué depende? (Como interpreta el resultado)**
+> 9. **El comando "** _ **grep"** _ **contesta la pregunta de cuantas secuencias tienen ese patrón? ¿o no? ¿De qué depende? (Como interpreta el resultado)**
 ```
 fasta_formatter -i human_proteome.faa -w 0 > mod_human_proteome.faa
 ```
 ¿Qué cambios se generaron en el archive? ¿Puede ahora usar el comando grep para contestar la pregunta anterior?
 
-> 10 **Ahora ejecutamos la búsqueda usando el comando** _ **"fuzzpro"** _ **de emboss**
+> 10. **Ahora ejecutamos la búsqueda usando el comando** _ **"fuzzpro"** _ **de emboss**
 
 El comando _ **"fuzzpro"** _ pertenece al paquete emboss (ya instalado) y sirve para buscar patrones en secuencias de aminoácidos
 
@@ -292,7 +292,7 @@ fuzzpro -sequence human_proteome.faa -pattern LLxND -outfile llxnd_human_proteom
 ```
 Ojo: en el comando fuzzpro, el caracter "x" es usado como wildcard.
 
-> 11 **¿Son iguales los resultados obtenidos por ambos comandos (**_ **grep** _ **y** _ **fuzzpro** _**)? ¿Por qué? ¿Por qué cree que importante la búsqueda de patrones?**
+> 11. **¿Son iguales los resultados obtenidos por ambos comandos (**_ **grep** _ **y** _ **fuzzpro** _**)? ¿Por qué? ¿Por qué cree que importante la búsqueda de patrones?**
 
 Nota: Para ver el resultado general de _fuzzpro_ (cantidad de secuencias con el patrón, cantidad de veces que aparece el patrón, etc), tienen que ver al final del archivo de salida, para eso pueden usar el comando _ **"tail"** _
 
@@ -300,13 +300,13 @@ Nota: Para ver el resultado general de _fuzzpro_ (cantidad de secuencias con el 
 ```
 tail llxnd_human_proteome.fuzzpro
 ```
-> 12 **¿Cómo podemos editar los archivos creados?**
+> 12. **¿Cómo podemos editar los archivos creados?**
 
 Para editar cualquiera de los archivos podemos usar el comando_ **"nano"** _(para salir Ctrl+x) o _"__ **vim"** _.
 ```
 nano llxnd_human_proteome.fuzzpro
 ```
-> 13 **¿Cómo podemos ordenar la lista de gi numbers obtenida anteriormente?**
+> 13. **¿Cómo podemos ordenar la lista de gi numbers obtenida anteriormente?**
 
 Usando el comando_ **"sort"** _, probar que ocurre si usamos las opciones_ **"-n"** _ y/o_ **"-r"** _:
 ```
@@ -324,7 +324,7 @@ Observar el archivo generado con les y determinar cuántas secuencias hay. ¿Cua
 
 Ayuda: **infoseq** o **fastalength** pueden brindarle esa información.
 
-> 14 **¿Qué información puede extraer?**
+> 14. **¿Qué información puede extraer?**
 
 Ahora vamos a descargar los CDS, es decir los transcriptos que dan lugar a las proteínas.
 ```
@@ -334,13 +334,13 @@ ejecutar:
 ```
 efetch -help
 ```
-> 15 **¿Según esta información que debería cambiar en el comando para obtener las proteínas?**
+> 15. **¿Según esta información que debería cambiar en el comando para obtener las proteínas?**
 
 Ejecute el comando que cree que funcionará y guarde la secuencia en el archivo coronavirus\_aa.fasta.
 ```
 efetch -db nucleotide -id MT066156 -format fasta_cds_aa > coronavirus_aa.fasta
 ```
-> 16 **¿Cuál es la proteína más larga? ¿Y cuál es la más corta?**
+> 16. **¿Cuál es la proteína más larga? ¿Y cuál es la más corta?**
 
 **Nota** : puede ayudarse con un comando usado en ejercicios anteriores
 
@@ -348,7 +348,7 @@ efetch -db nucleotide -id MT066156 -format fasta_cds_aa > coronavirus_aa.fasta
 ```
 fastacomposition -f coronavirus_aa.fasta -s > composition.txt
 ```
-> 17 **Qué información le brinda?**
+> 17. **Qué información le brinda?**
 
 ```
 Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023
