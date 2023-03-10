@@ -4,9 +4,9 @@
 
 _URLs que utilizaremos hoy:_
 
-_ **-Gquery** _, es el "_google_" de todas las bases de datos de NCBI (National Center for Biotechnology Information).
+**-Gquery**, es el "_google_" de todas las bases de datos de NCBI (National Center for Biotechnology Information).
 
-Permite buscar de manera _ **MUY** _ rápida, sencilla y/o compleja, a través de todas las bases de datos de NCBI (más de 40 DBs).
+Permite buscar de manera **MUY** rápida, sencilla y/o compleja, a través de todas las bases de datos de NCBI (más de 40 DBs).
 
 (_Gquery_ antes se llamaba _Entrez_)
 
@@ -26,7 +26,7 @@ _ **Conectores lógicos** _
 
 ![](RackMultipart20230310-1-7kwfa1_html_e72a6be733ec5589.png)
 
-# Parte I: Uso de Entrez o GQuery. Buscar proteínas con un dominio que nos interesa.
+## Parte I: Uso de Entrez o GQuery. Buscar proteínas con un dominio que nos interesa.
 
 Para llegar hasta el gen DSCAM (Down syndrome cell adhesion molecule) del genoma humano en el cromosoma 21, nos interesa el dominio Immunoglobulin:
 
@@ -45,7 +45,7 @@ Para llegar hasta el gen DSCAM (Down syndrome cell adhesion molecule) del genoma
 
 ![](RackMultipart20230310-1-7kwfa1_html_1eb390ac83eeb949.png)
 
-# Parte II: Ahora vamos a trabajar con el cDNA AF217525. Utilizar Gquery para obtener la secuencia FASTA y encontrar la siguiente información
+## Parte II: Ahora vamos a trabajar con el cDNA AF217525. Utilizar Gquery para obtener la secuencia FASTA y encontrar la siguiente información
 
 ![](RackMultipart20230310-1-7kwfa1_html_b3c88ac2de8eeb56.png)
 
@@ -57,7 +57,7 @@ Para llegar hasta el gen DSCAM (Down syndrome cell adhesion molecule) del genoma
 4. ¿Qué dominios Pfam contiene la proteína?
 5. ¿Tiene alguna publicación asociada?
 
-# Parte III: Usar NCBI Gquery para realizar búsquedas de proteínas
+## Parte III: Usar NCBI Gquery para realizar búsquedas de proteínas
 
 Busque la proteína receptora de angiotensina "angiotensin II receptor".
 
