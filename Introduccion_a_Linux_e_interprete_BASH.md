@@ -114,13 +114,13 @@ Para ver los archivos que tenemos en el directorio y confirmar que renombraron c
 ```
 ls
 ```
-- 1 **¿Cuántas líneas tiene el archivo?**
+> 1 **¿Cuántas líneas tiene el archivo?**
 
 El comando " **wc**" (wc = word count) muestra las líneas, palabras y caracteres del archivo especificado. Si usamos la opción **"-l"** obtenemos solo la cantidad de líneas.
 ```
 wc human_proteome.faa
 ```
-1. **¿Cuántas proteínas hay en el archivo?**
+> 2 **¿Cuántas proteínas hay en el archivo?**
 
 Para esta operación se puede usar el comando **"grep":**
 
