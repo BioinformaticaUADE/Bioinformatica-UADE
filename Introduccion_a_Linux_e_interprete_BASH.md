@@ -1,6 +1,6 @@
-## TP 1: Comandos en Linux y Secuencias
+## TP 1: Introduccion a Linux e interprete BASH
 
-**TP 1: Comandos en Linux y Secuencias**
+# TP 1: Comandos en Linux y Secuencias
 
 Primero algunas aclaraciones sobre cómo vamos a trabajar en los TPs!!!!!!!
 
