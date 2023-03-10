@@ -206,21 +206,21 @@ Para instalarlo desde una terminal localizamos el archivo y ejecutamos lo siguie
 ```
 sh Anaconda3-2020.07-Linux-x86_64.sh
 ```
-![](RackMultipart20230308-1-pyqm3o_html_16b88d8b422bec7.png)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/conda1.jpg)
 
 Presionar Enter hasta que aparezca:
 
-![](RackMultipart20230308-1-pyqm3o_html_386496288abec279.png)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/conda2.jpg)
 
 Tipear yes y dar Enter
 
 Y Luego nuevamente Enter y comenzará la instalación de Anaconda.
 
-![](RackMultipart20230308-1-pyqm3o_html_1dbf5d229810f963.png)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/conda3.jpg)
 
 Finalmente:
 
-![](RackMultipart20230308-1-pyqm3o_html_5382700229818892.png)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/conda4.jpg)
 
 Ahora cada vez que inicie una terminal observará la palabra "base" al principio de la línea.
 
