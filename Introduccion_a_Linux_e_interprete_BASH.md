@@ -349,9 +349,8 @@ efetch -db nucleotide -id MT066156 -format fasta_cds_aa > coronavirus_aa.fasta
 fastacomposition -f coronavirus_aa.fasta -s > composition.txt
 ```
 > 17. **Qué información le brinda?**   
-
-  
-  
+<br />
+<br />
 ___
    ###### *Dr. Lucas L. Maldonado*
    ###### *Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023*
