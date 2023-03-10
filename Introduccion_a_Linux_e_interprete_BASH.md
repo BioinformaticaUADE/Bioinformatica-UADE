@@ -45,29 +45,30 @@ Bash contiene decenas de comandos que pueden escribirse para ejecutarse en la te
 |  **grep**  | Buscar strings en textos |  **wc**  | Word Count |
 |  **wget**  | Descarga de la web | **gunzip**  | Descomprime archivos.gz |
 
+
 Entrar a la terminal y ejecutar el comando:
 ```
 tree -d -L 1
 ```
 Este comando nos permite ver la organización de los directorios
 
-![](RackMultipart20230308-1-pyqm3o_html_d20f3371b1c75204.png)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/tree.jpg)
 
 Todos los TPs los realizaremos en "/home/bioinformatica/Documentos"
 
 Descargaremos desde OneDrive el archivo docs\_Bioinformatica.tar.gz en caso de que no lo tengan y lo guardaremos en la carpeta "Documentos"
 
 Y vamos a descomprimir el archivo haciendo:
-
+```
 tar -xzvf docs\_Bioinformatica.tar.gz
-
+```
 Veremos entonces en el directorio:
 
 **/home/bioinformatica/Documentos/docs\_Bioinformatica**
 
 encontrarán todos los archivos necesarios.
 
-![](RackMultipart20230308-1-pyqm3o_html_1655f4322aa9bf11.png)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/documentos_data.jpg)
 
 ## Parte 1: Trabajamos con archivos de texto en la línea de comandos
 
