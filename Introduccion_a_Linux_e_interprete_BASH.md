@@ -356,3 +356,4 @@ fastacomposition -f coronavirus_aa.fasta -s > composition.txt
 *<font size="2">Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023</font>*
 
 <p style="text-align:center;"> I am in center
+  </p>
