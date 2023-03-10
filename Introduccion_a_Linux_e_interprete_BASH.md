@@ -75,17 +75,17 @@ encontrarán todos los archivos necesarios.
 Lo primero que vamos hacer _verificar donde estamos_ y _proteger_ los archivos de posibles accidentes en que los borremos!!! :(
 
 Ejecuten este comando con cuidado y atención (ingresar contraseña "bioinformatica" ):
-
-sudo chown root:root /home/bioinformatica/Documentos/docs\_Bioinformatica/\*
-
+```
+sudo chown root:root /home/bioinformatica/Documentos/docs_Bioinformatica/\*
+```
 Vean un manual/tutorial de "chown" en: [http://www.computerhope.com/unix/uchown.htm](http://www.computerhope.com/unix/uchown.htm)
 
 Con este comando hacemos que el usuario _"root"_ sea dueño de estos archivos, igual van a poder copiarlos a otro directorio, pero si intentan borrarlos no lo van a tener permitido.
 
 Si quieren ver como son los permisos de esos archivos, ejecutar:
-
+```
 ls -l
-
+```
 Ahora si empezamos con el TP1, para eso crearemos la carpeta TP1 en el directorio Documentos. Hoy vamos a trabajar con el archivo _"protein.fa.gz"_, primero _copien_ el archivo _protein.fa.gz_ desde /home/bioinformatica/Documentos/docs\_Bioinformatica a su directorio "_/home/bioinformatica/Documentos/docs\_Bioinformatica/TP1_"
 
 Cuidado, utilicen bien la sintaxis y ruta completa de archivo, para copiar ejecuten:
