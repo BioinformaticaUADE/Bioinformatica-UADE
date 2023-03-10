@@ -32,7 +32,7 @@ En otras palabras, una terminal BASH es una interfaz que espera comandos de text
 
 ![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/bash.png)
 
-Bash contiene decenas de comandos que pueden escribirse para ejecutarse en la terminal y junto con algunas convenciones de semántica y sintaxis componen un robusto lenguaje de programación enfocado al [_scripting_](https://en.wikipedia.org/wiki/Scripting_language) con él cual pueden implementarse complejos algoritmos. En este tutorial solamente veremos algunos [comandos populares](https://bioinfo.fmed.uba.ar/docs/guia-del-cluster/comandos-populares-de-bash/), e iremos aprendiendo y utilizando más comandos a medida que avanzamos en la materia.
+Bash contiene decenas de comandos que pueden escribirse para ejecutarse en la terminal y junto con algunas convenciones de semántica y sintaxis componen un robusto lenguaje de programación enfocado al [_scripting_](https://en.wikipedia.org/wiki/Scripting_language) con él cual pueden implementarse complejos algoritmos. En este tutorial solamente veremos algunos [comandos populares](https://linuxconfig.org/linux-commands-cheat-sheet), e iremos aprendiendo y utilizando más comandos a medida que avanzamos en la materia.
 
 | **Comando** | **Acción** | **Comando** | **Acción** |
 | --- | --- | --- | --- |
