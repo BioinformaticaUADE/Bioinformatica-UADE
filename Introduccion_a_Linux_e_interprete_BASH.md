@@ -170,7 +170,7 @@ El _**"|" (pipe)**_ toma la salida del comando ejecutado a su izquierda y la dir
 
 Para obtener sólo los "gi" de cada proteína que contiene _"ATP-binding"_ y mandarlos a un nuevo archivo que se llame _"atp\_binding.gis"_ ejecutamos:
 ```
-grep "ATP-binding" human_proteome.faa | cut -f 2 -d "|" \> atp_binding.gis
+grep "ATP-binding" human_proteome.faa | cut -f 2 -d "|" > atp_binding.gis
 ```
 Para ver las 10 primeras líneas del archivo de salida ejecutamos:
 ```
