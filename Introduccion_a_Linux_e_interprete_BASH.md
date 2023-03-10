@@ -60,7 +60,7 @@ Descargaremos desde OneDrive el archivo docs\_Bioinformatica.tar.gz en caso de q
 
 Y vamos a descomprimir el archivo haciendo:
 ```
-tar -xzvf docs\_Bioinformatica.tar.gz
+tar -xzvf docs_Bioinformatica.tar.gz
 ```
 Veremos entonces en el directorio:
 
