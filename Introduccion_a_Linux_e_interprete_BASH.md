@@ -34,7 +34,6 @@ En otras palabras, una terminal BASH es una interfaz que espera comandos de text
 
 Bash contiene decenas de comandos que pueden escribirse para ejecutarse en la terminal y junto con algunas convenciones de semántica y sintaxis componen un robusto lenguaje de programación enfocado al [_scripting_](https://en.wikipedia.org/wiki/Scripting_language) con él cual pueden implementarse complejos algoritmos. En este tutorial solamente veremos algunos [comandos populares](https://linuxconfig.org/linux-commands-cheat-sheet), e iremos aprendiendo y utilizando más comandos a medida que avanzamos en la materia.
 
-| --- | --- | --- | --- |
 | **Comando** | **Acción** | **Comando** | **Acción** |
 | --- | --- | --- | --- |
 |  **ls**  | Listar contenidos | **head**  | Ver 10 primeras líneas |
@@ -47,9 +46,9 @@ Bash contiene decenas de comandos que pueden escribirse para ejecutarse en la te
 |  **wget**  | Descarga de la web | **gunzip**  | Descomprime archivos.gz |
 
 Entrar a la terminal y ejecutar el comando:
-
+```
 tree -d -L 1
-
+```
 Este comando nos permite ver la organización de los directorios
 
 ![](RackMultipart20230308-1-pyqm3o_html_d20f3371b1c75204.png)
