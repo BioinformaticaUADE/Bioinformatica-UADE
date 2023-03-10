@@ -351,6 +351,6 @@ fastacomposition -f coronavirus_aa.fasta -s > composition.txt
 > 17. **Qué información le brinda?**
 
 
-###### >**Dr. Lucas L. Maldonado**
-###### >*Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023*
+###### *Dr. Lucas L. Maldonado*
+###### *Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023*
 
