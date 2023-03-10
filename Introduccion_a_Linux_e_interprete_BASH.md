@@ -16,7 +16,7 @@ _\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*_
 
 **Hoy (y resto de materia) utilizaremos la máquina virtual**
 
-![](RackMultipart20230308-1-pyqm3o_html_7d3dc0e8620c04a7.png)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/VM.jpg)
 
 **Usuario: bioinformatica**
 
