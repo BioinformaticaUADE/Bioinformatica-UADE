@@ -18,9 +18,9 @@ _\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*_
 
 ![](RackMultipart20230308-1-pyqm3o_html_7d3dc0e8620c04a7.png)
 
-Usuario: bioinformatica
+**Usuario: bioinformatica**
 
-password: bioinformatica
+**password: bioinformatica**
 
 En esta máquina virtual están instalado el sistema operativo Lubuntu que es el entorno que se utilizará en la materia para realizar todos los TPs. Los alumnos irán instalando los programas necesarios para cada TP y descargando los archivos con el fin que se familiaricen con el entorno, la línea de comandos y el modo de trabajar en bioinformática en un entorno Linux. Los archivos necesarios para los TPs se podrán descargar desde la carpeta Bioinformática\_UADE\_2020 compartida en OneDrive o desde sus repositorios originales.
 
@@ -30,7 +30,7 @@ Ahora sí, una vez adentro de la máquina virtual verán un entorno gráfico de 
 
 En otras palabras, una terminal BASH es una interfaz que espera comandos de texto a ser escritos por el usuario mediante el teclado, cuando se ejecutan los comandos escritos estos son enviados a la computadora en lenguaje binario, que es el lenguaje que la computadora comprende, es por eso que a la terminal también se la conoce como intérprete de comandos. Nosotros escribimos dentro de la terminal en lenguaje Bash y el intérprete traduce nuestros comandos y se los envía a la computadora para ser ejecutados. Dentro de la terminal el mouse no se utiliza para ejecutar comandos o programas, solo sirve, por ejemplo, para seleccionar texto, copiarlo y pegarlo o para mover la barra lateral para subir y bajar la página en la que estamos. Sin embargo, para navegar el sistema de archivos, abrir carpetas y ejecutar programas los comandos deben ser escritos de manera literal en el intérprete. Cada vez que escribimos un comando, lo ejecutamos presionando la tecla Enter⏎. Hay otros lenguajes además de Bash, cada uno con su objetivo puntual, con sus pros y cons, por ejemplo: python, perl, java y R. Pero para la mayoría de las tareas usaremos Bash.
 
-![](RackMultipart20230308-1-pyqm3o_html_a58b9d8b7e441c59.gif)
+![]([RackMultipart20230308-1-pyqm3o_html_a58b9d8b7e441c59.gif](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/bash.jpg))
 
 Bash contiene decenas de comandos que pueden escribirse para ejecutarse en la terminal y junto con algunas convenciones de semántica y sintaxis componen un robusto lenguaje de programación enfocado al [_scripting_](https://en.wikipedia.org/wiki/Scripting_language) con él cual pueden implementarse complejos algoritmos. En este tutorial solamente veremos algunos [comandos populares](https://bioinfo.fmed.uba.ar/docs/guia-del-cluster/comandos-populares-de-bash/), e iremos aprendiendo y utilizando más comandos a medida que avanzamos en la materia.
 
