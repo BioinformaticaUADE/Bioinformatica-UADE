@@ -73,4 +73,11 @@ Haga más específica su búsqueda especificando el campo "protein name".
 
 Ahora agregue además el campo organismo para hacer una búsqueda en humanos y otra búsqueda en gallo y encuentre en cada caso los códigos de acceso y los identificadores únicos (GI).
 
-Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2022
+<br />
+<br />
+
+___
+   ###### *Dr. Lucas L. Maldonado*
+   ###### *Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023*
+___
+
