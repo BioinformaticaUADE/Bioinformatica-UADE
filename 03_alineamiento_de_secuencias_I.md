@@ -1,46 +1,52 @@
-# Trabajo Práctico 4 - Alineamientos 2020
+# Trabajo Práctico 3 - Alineamientos de secuencias I
 
-Nota: Para la práctica TP3 utilizaremos la maquina virtual creada y configurada en los TPs 1 y 2. Para ello abra VirtualBox y la maquina virtual.
+**Nota:** Para la práctica TP3 utilizaremos la maquina virtual creada y configurada en los TPs 1 y 2. Para ello abra VirtualBox y la maquina virtual.
 
-Trabajaremos con los documentos de:
-
+Trabajaremos con los datos de:
+```
 /home/bioinformatica/Documentos/docs\_Bioinformatica
-
+```
 Si tiene restringidos los permisos utilice chown para poder acceder a los archivos de la siguiente manera:
 
 Desde el directorio:
-
+```
 /home/bioinformatica/Documentos
-
+```
 Ejecute:
-
+```
 sudo chown -R 755 docs\_Bioinformatica
+```
+e ingrese la contraseña cuando se lo solicite. Recuerde que la contraseña es:
 
-e ingrese la contraseña cuando se lo solicite
+_pass: **bioinformatica**_
 
-# TP 3: Alineamientos
+___
 
-## Parte I: Buscamos secuencias para trabajar. Usar el firefox dentro de la MV, asi sera mas facil encontrar el archivo que descargaron.
+## Parte I: Parte I: Búsqueda de secuencias y alineamientos por dotplots
 
-La idea es trabajar con algunas secuencias homólogas, qué buscaremos en NCBI, para luego realizar algunos alineamientos…
+Buscamos secuencias para trabajar. Usar el firefox dentro de la MV, asi sera mas facil encontrar el archivo que descargaron.
+La idea es trabajar con algunas secuencias homólogas, qué buscaremos en NCBI, para luego realizar algunos alineamientos.
 
 Crear un directorio TP3, dentro de su directorio _ **"Documentos"** _, donde trabajaremos para este TP.
-
+```
 mkdir TP3
-
+```
 Para buscar las secuencias que vamos a usar para alinear, vayan al sitio URL: http://www.ncbi.nlm.nih.gov/gquery/
 
-Usaremos la secuencia de la proteína **DSCAM** del cromosoma 21 de humanos y su homóloga en ratón (Mus musculus).
+Usaremos la secuencia de la proteína **DSCAM** del cromosoma 21 de humanos y su homóloga en ratón (_Mus musculus_).
 
 Con esas dos proteínas realizaremos algunos alineamientos.
 
-1. **Encontrar la secuencia de la proteína codificada por el gen DSCAM del cromosoma 21 (Isoforma CHD2-42) en Humanos usando "gquery" de pagina web ncbi****.**
+_**Encontrar la secuencia de la proteína codificada por el gen DSCAM del cromosoma 21 (Isoforma CHD2-42) en Humanos usando "gquery" de pagina web ncbi.**_
+> 1. ¿Cual es la sintaxis usada para realizar la busqueda?
 
-Entrar a la base "_gene_" e identificar el código que la identifica dentro de esa base de datos.
+Entrar a la base de datos "_**gene**_" e identificar el código que la identifica dentro de esa base de datos.
 
-Ayuda: Para visualizar todo el contenido de la página DSCAM dentro de la base "_gene_", primero condensar (achicar) todas las secciones de información de esa página. La base de datos "_gene_" contiene mucha información.
+**Ayuda:** para visualizar todo el contenido de la página DSCAM dentro de la base "_gene_", primero condensar (achicar) todas las secciones de información de esa página. La base de datos "_gene_" contiene mucha información.
 
-1. **¿**** Cual es su codigo NP (Código de secuencia de la base RefSeq)? Guardar en formato "fasta" la secuencia. (por defecto se guarda en directorio "Downloads")**
+> 2. ¿Cual es su codigo NP (Código de secuencia de la base RefSeq)?
+ 
+Guardar en formato "fasta" la secuencia. (por defecto se guarda en directorio "Downloads")
 
 Ayuda: Usar los _links_ para llegar a su versión RefSeq de NCBI.
 
