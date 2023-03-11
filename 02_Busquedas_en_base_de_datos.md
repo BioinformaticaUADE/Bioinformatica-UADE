@@ -22,7 +22,7 @@ _O bien usando palabras especificando campos y conectores lógicos._
 
 _**"Severe acute respiratory syndrome coronavirus 2" AND SARS-CoV-2[organism]**_
 
-_ **Conectores lógicos**_
+_**Conectores lógicos**_
 
 ![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/conditionals.jpg)
 
