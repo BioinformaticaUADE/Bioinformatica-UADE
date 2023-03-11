@@ -137,7 +137,7 @@ Utilizando _**dotmatcher**_ y _**dottup**_ alineamos cada una de las dos isoform
 
 ## Parte III: Alineamiento de a pares de ácidos nucleicos
 
-Descargue las secuencias de los genomas de SARS-CoV-2 y SARS y compárelas usando _ **dotmatcher.** _
+Descargue las secuencias de los genomas de SARS-CoV-2 y SARS y compárelas usando _**dotmatcher.**_
 
 Utilice -threshold 23 -windowsize 10, -threshold 23 -windowsize 77 y -threshold 37 -windowsize 77
 
