@@ -48,71 +48,74 @@ Entrar a la base de datos "_**gene**_" e identificar el código que la identific
  
 Guardar en formato "fasta" la secuencia. (por defecto se guarda en directorio "Downloads")
 
-Ayuda: Usar los _links_ para llegar a su versión RefSeq de NCBI.
+**Ayuda:**
+- Usar los _links_ para llegar a su versión RefSeq de NCBI.
+- Ir a la _webpage_ de cada secuencia y usar _link "Send to"_ en formato fasta.
 
-Ayuda II: Ir a la _webpage_ de cada secuencia y usar _link "Send to"_ en formato fasta.
+O bien una vez identificado el código de acceso puede descargar la secuencia desde la terminal con el siguiente comando **_(recomendado)_**:
+```
+efetch -db sequences -id NP_001380 -format fasta > DSCAM_humana.fasta
+```
+**Nota:** recordar previamente activar el enviroment "análisis\_de\_secuencias
 
-O bien una vez identificado el código de acceso puede descargar la secuencia desde la terminal con el siguiente comando:
-
-efetch -db sequences -id NP\_001380 -format fasta \> DSCAM\_humana.fasta
-
-**Nota:** recordar previamente activar el enviroment "análisis\_de\_secuencias **"**
-
-1. **¿**** Hay otros organismos que tengan ese gen? Nombrar alguno de estos organismos y el identificador de la proteína.**
+> 3. ¿Hay otros organismos que tengan ese gen? Nombrar alguno de estos organismos y el identificador de la proteína
 
 **Ayuda** : Pueden usar los vínculos del panel de la derecha en la página web dentro de base "gene", por ejemplo, el link: HomoloGene, que contiene el resultado de una búsqueda de homólogos del gen en otras especies, que ya fue realizado y se muestra en ese link como un lista.
 
-![](RackMultipart20230311-1-fq8s9x_html_e9f76826688dd96f.png)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/link_help_1.jpg)
 
-1. **Encuentren y guarden la secuencia de proteína del gen DSCAM de**  **Mus musculus** **(usando la lista de HomoloGene) en formato "fasta".**
+Encuentren y guarden la secuencia de proteína del gen DSCAM de **Mus musculus** **(usando la lista de HomoloGene) en formato "fasta"**
 
-Ayuda: Ir a la _webpage_ de cada secuencia y usar _link "Send to"_ en formato fasta.
+**Ayuda:** Ir a la _webpage_ de cada secuencia y usar _link "Send to"_ en formato fasta.
 
-1. **Copie ambos archivos con las secuencias descargadas al directorio TP3 y cambien los nombres por unos acorde a su contenido**
+Copie ambos archivos con las secuencias descargadas al directorio TP3 y cambien los nombres por unos acorde a su contenido
 
 _O ben una vez identificado l odigo de acceso puede directamente descargarlo a la terminal:_
-
-efetch -db sequences -id NP\_112451 -format fasta \> DSCAM\_raton.fasta
-
+```
+efetch -db sequences -id NP_112451 -format fasta > DSCAM_raton.fasta
+```
 ## Parte II: Alineamiento de a pares de proteínas
 
 Primero vamos a alinear la secuencia proteica de_ **Homo sapiens** _ contra la de_ **Mus musculus** _
 
-Ayuda: Para conocer la "sintaxis" correcta para ejecutar el programa pueden usar el parámetro "-h" (Ejemplo"dottup -h")
+> 4. ¿Por que querriamos hacer este tipo de alineamiento?
 
-1. **Hacemos un "dot-plot" de estas dos secuencias.**
+**Ayuda:** Para conocer la "sintaxis" correcta para ejecutar el programa pueden usar el parámetro "-h" (Ejemplo"dottup -h")
+
+Hacemos un "dot-plot" de estas dos secuencias
 
 Para esto vamos a usar dos comandos del paquete _emboss_:
 
-- _ **dottup** _ (Displays a wordmatch dotplot of two sequences)
-- _ **dotmatcher** _(Draw a threshold dotplot of two sequences)
+- _**dottup** (Displays a wordmatch dotplot of two sequences)_
+- _**dotmatcher** (Draw a threshold dotplot of two sequences)_
 
 **Ayuda:** Ejemplo de línea de comandos para ejecución:
-
-# ayuda: lo qué está **\<nombre\_archivo\_1\>** debe ser reemplazado por nombre de archivo como lo tienen ustedes.
-
-**dottup -graph png -asequence \<nombre\_archivo\_1\> -bsequence \<nombre\_archivo\_2\>**
-
-Nota: Recuerde ejecutar ls o ll para observar los archivos creados. El archivo de extensión .png puede ser abierto con el programa eog. Para ello instálelo:
-
+- lo qué está **\<nombre\_archivo\_1\>** debe ser reemplazado por nombre de archivo como lo tienen ustedes.
+```
+dottup -graph png -asequence nombre_archivo_1 -bsequence nombre_archivo_2
+```
+**Nota:** Recuerde ejecutar ls o ll para observar los archivos creados. El archivo de extensión .png puede ser abierto con el programa eog. Para ello instálelo:
+```
 sudo apt install eog
-
+```
 y luego puede ejecutarlo haciendo:
+```
+eog nombre_de_archivo.png
+```
+  Primero alineamos usando _**dottup**_
+  > 5. ¿Qué ocurre si variamos el parámetro _wordsize_?
+  Ahora alineamos usando _**dotmatcher**_ variando los parámetros _windowsize_ y _threshold_
+  > 6. ¿Cuales son los valores por defecto?
+  > 7. ¿Que ocurre al variar el _windowsize_ o _threshold_? Informar diferencias observadas. (**Ayuda:** Pasen de un _windowsize_ de 10 a uno de 200)
+  > 8. Supongan que usan un valor de _windowsize_ igual a 5 y el _threshold_ por defecto. ¿La figura muestra todos los alineamientos posibles? ¿Porque? Si la respuesta es NO, ¿como harian para verlos todos?
+  > 9. ¿Que hace cada uno de estos programas?
 
-eog nombre\_de\_archivo.png
+Ahora alineamos la secuencia de _**Homo Sapiens**_ con las secuencias de los archivos que YA se encuentran en la VM:
 
-  1. Primero alineamos usando _ **dottup** _, ¿Qué ocurre si variamos el parámetro _wordsize_?
-  2. Ahora alineamos usando _ **dotmatcher** _ variando los parámetros _windowsize_ y _threshold_¿Cuales son los valores por defecto?
-  3. ¿Que ocurre al variar el _windowsize_ o _threshold_? Informar diferencias observadas. (Ayuda: Pasen de un _windowsize_ de 10 a uno de 200)
-  4. Supongan que usan un valor de _windowsize_ igual a 5 y el _threshold_ por defecto. ¿La figura muestra todos los alineamientos posibles? ¿Porque? Si la respuesta es NO, ¿como harian para verlos todos?
-  5. ¿Que hace cada uno de estos programas?
-
-1. **Ahora alineamos la secuencia de** _ **Homo Sapiens** _ **con las secuencias de los archivos que YA se encuentran en la MV:**
-
-**Los archivos están en el directorio:**
-
-**/home/bioinformatica/Documentos/docs\_Bioinformatica**
-
+Los archivos están en el directorio:
+```
+/home/bioinformatica/Documentos/docs_Bioinformatica
+```
 **Archivos:**
 
 - DSCAM\_homo\_sapiens\_isoform1.fasta
@@ -121,16 +124,16 @@ eog nombre\_de\_archivo.png
 
 **Nota:** Hagan una copia de estos archivos en el directorio que crearon al principio del TP (directorio TP3). Asi evitan borrar archivos originales sin querer!!!!
 
-Utilizando _ **dotmatcher** _y _ **dottup** _ alineamos cada una de las dos isoformas con la proteína de humanos y luego las dos isoformas entre sí:
+Utilizando _**dotmatcher**_ y _**dottup**_ alineamos cada una de las dos isoformas con la proteína de humanos y luego las dos isoformas entre sí:
 
-Ayuda: Tenemos que hacer 3 alineamientos:
+**Ayuda:** Tenemos que hacer 3 alineamientos:
 
 - DSCAM\_homo\_sapiens\_isoform1.fasta vs NP\_001380
 - DSCAM\_homo\_sapiens\_isoform2.fasta vs NP\_001380
 - DSCAM\_homo\_sapiens\_isoform1.fasta vs DSCAM\_homo\_sapiens\_isoform2.fasta
 
-  1. ¿Que interpretan de los resultados?
-  2. ¿Cuales son las diferencias entre las secuencias?
+  > 10. ¿Que interpretan de los resultados?
+  > 11. ¿Cuales son las diferencias entre las secuencias?
 
 ## Parte III: Alineamiento de a pares de ácidos nucleicos
 
