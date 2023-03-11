@@ -30,16 +30,17 @@ _**Conectores lógicos**_
 
 Para llegar hasta el gen DSCAM (Down syndrome cell adhesion molecule) del genoma humano en el cromosoma 21, nos interesa el dominio Immunoglobulin:
 
-1. Utilizando Entrez o GQuery, encuentra cuántos genes humanos tienen un dominio _Immunoglobulin_. ¿Cómo sabemos si está bien eso? ¿Uso la base nucleótidos o genes? ¿Donde ingreso la búsqueda, que me conviene? Tip: Usar ENTREZ de NCBI.
- > 1. ¿Que es lo que ven?
-  2. Tipear: human [organism] AND Immunoglobulin domain
-  3. ¿En todas las distintas bases de datos se utilizan esos "campos"?
-2. Y si probamos con delimitar el campo "domain" para buscar "Immunoglobulin". ¿Qué cambia? ¿A qué búsqueda le creo mas? ¿Por qué?
-3. Tipear: Immunoglobulin [domain name] AND human [organism]
-4. Acotar la búsqueda para encontrar cuántos genes con este tipo de dominio existen en el cromosoma 21. Usar el buscador en la página principal de entrez.
-5. Tipear: human [organism] AND 21 [chromosome] AND Immunoglobulin [domain name]
-  1. ¿En todas las distintas bases de datos se utilizan los mismos "campos"?
-  2. Ver dentro de genes, ESTs, etc.
+> 1. Utilizando Entrez o GQuery, encuentra cuántos genes humanos tienen un dominio _Immunoglobulin_.
+> 2. ¿Cómo sabemos si está bien eso? ¿Uso la base nucleótidos o genes? ¿Donde ingreso la búsqueda, que me conviene? Tip: Usar ENTREZ de NCBI.
+> 3. ¿Que es lo que ven?
+  Tipear: human [organism] AND Immunoglobulin domain
+> 4. ¿En todas las distintas bases de datos se utilizan esos "campos"?
+> 5. Y si probamos con delimitar el campo "domain" para buscar "Immunoglobulin". ¿Qué cambia? ¿A qué búsqueda le creo mas? ¿Por qué?
+Tipear: Immunoglobulin [domain name] AND human [organism]
+Acotar la búsqueda para encontrar cuántos genes con este tipo de dominio existen en el cromosoma 21. Usar el buscador en la página principal de entrez.
+Tipear: human [organism] AND 21 [chromosome] AND Immunoglobulin [domain name]
+> 6. ¿En todas las distintas bases de datos se utilizan los mismos "campos"?
+Ver dentro de genes, ESTs, etc.
 
 ![](RackMultipart20230310-1-7kwfa1_html_45f35879539980f1.png)
 
