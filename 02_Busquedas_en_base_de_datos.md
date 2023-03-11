@@ -31,9 +31,13 @@ _**Conectores lógicos**_
 Para llegar hasta el gen DSCAM (Down syndrome cell adhesion molecule) del genoma humano en el cromosoma 21, nos interesa el dominio Immunoglobulin:
 
 > 1. Utilizando Entrez o GQuery, encuentra cuántos genes humanos tienen un dominio _Immunoglobulin_.
-> 2. ¿Cómo sabemos si está bien eso? ¿Uso la base nucleótidos o genes? ¿Donde ingreso la búsqueda, que me conviene? Tip: Usar ENTREZ de NCBI.
+> 2. ¿Cómo sabemos si está bien eso? ¿Uso la base nucleótidos o genes? ¿Donde ingreso la búsqueda, que me conviene?
+ 
+Tip: Usar ENTREZ de NCBI.
 > 3. ¿Que es lo que ven?
+
   Tipear: human [organism] AND Immunoglobulin domain
+  
 > 4. ¿En todas las distintas bases de datos se utilizan esos "campos"?
 > 5. Y si probamos con delimitar el campo "domain" para buscar "Immunoglobulin". ¿Qué cambia? ¿A qué búsqueda le creo mas? ¿Por qué?
 Tipear: Immunoglobulin [domain name] AND human [organism]
