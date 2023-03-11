@@ -36,45 +36,53 @@ Para llegar hasta el gen DSCAM (Down syndrome cell adhesion molecule) del genoma
 Tip: Usar ENTREZ de NCBI.
 > 3. ¿Que es lo que ven?
 
-  Tipear: human [organism] AND Immunoglobulin domain
+
+  Tipear:
   
+  ```
+  human [organism] AND "Immunoglobulin domain"
+  ```
 > 4. ¿En todas las distintas bases de datos se utilizan esos "campos"?
 > 5. Y si probamos con delimitar el campo "domain" para buscar "Immunoglobulin". ¿Qué cambia? ¿A qué búsqueda le creo mas? ¿Por qué?
-Tipear: Immunoglobulin [domain name] AND human [organism]
+Tipear:
+```
+Immunoglobulin [domain name] AND human [organism]
+```
 Acotar la búsqueda para encontrar cuántos genes con este tipo de dominio existen en el cromosoma 21. Usar el buscador en la página principal de entrez.
-Tipear: human [organism] AND 21 [chromosome] AND Immunoglobulin [domain name]
+Tipear: 
+```
+human [organism] AND 21 [chromosome] AND Immunoglobulin [domain name]
+```
 > 6. ¿En todas las distintas bases de datos se utilizan los mismos "campos"?
 Ver dentro de genes, ESTs, etc.
 
-![](RackMultipart20230310-1-7kwfa1_html_45f35879539980f1.png)
-
-![](RackMultipart20230310-1-7kwfa1_html_1eb390ac83eeb949.png)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/gquery.jpg)
 
 ## Parte II: Ahora vamos a trabajar con el cDNA AF217525. Utilizar Gquery para obtener la secuencia FASTA y encontrar la siguiente información
 
-![](RackMultipart20230310-1-7kwfa1_html_b3c88ac2de8eeb56.png)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/cdna.jpg)
 
 **(recordar qué la base de datos GENE es la qué contiene más información)**
 
-1. ¿A qué gen pertenece este cDNA? Dar nombre del Gen.
-2. ¿Cuántos aminoácidos tiene el producto de la traducción de este cDNA?
-3. ¿Cuáles son los IDs de cada posible transcripto de este gen? Confirmar si fueron manual o automáticamente curados (NM o XM). ¿Qué variante contiene el cDNA AF217525? ¿En qué cromosoma está el gen?
-4. ¿Qué dominios Pfam contiene la proteína?
-5. ¿Tiene alguna publicación asociada?
+> 1. ¿A qué gen pertenece este cDNA? Dar nombre del Gen.
+> 2. ¿Cuántos aminoácidos tiene el producto de la traducción de este cDNA?
+> 3. ¿Cuáles son los IDs de cada posible transcripto de este gen? Confirmar si fueron manual o automáticamente curados (NM o XM). ¿Qué variante contiene el cDNA AF217525? ¿En qué cromosoma está el gen?
+> 4. ¿Qué dominios Pfam contiene la proteína?
+> 5. ¿Tiene alguna publicación asociada?
 
 ## Parte III: Usar NCBI Gquery para realizar búsquedas de proteínas
 
 Busque la proteína receptora de angiotensina "angiotensin II receptor".
 
-1. ¿Cuántos resultados observa?
-2. ¿En cuántas especies/Reinos está presente?
-3. ¿En qué organismos está presente?
-4. ¿Cuántas tienen estructura?
-5. ¿Cuántas existen en bases de datos de proteínas curadas?
+> 1. ¿Cuántos resultados observa?
+> 2. ¿En cuántas especies/Reinos está presente?
+> 3. ¿En qué organismos está presente?
+> 4. ¿Cuántas tienen estructura?
+> 5. ¿Cuántas existen en bases de datos de proteínas curadas?
 
 Haga más específica su búsqueda especificando el campo "protein name".
 
-1. ¿Cuántos resultados observa ahora?
+> 6. ¿Cuántos resultados observa ahora?
 
 Ahora agregue además el campo organismo para hacer una búsqueda en humanos y otra búsqueda en gallo y encuentre en cada caso los códigos de acceso y los identificadores únicos (GI).
 
