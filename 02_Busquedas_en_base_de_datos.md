@@ -16,7 +16,7 @@ Permite buscar de manera **MUY** rápida, sencilla y/o compleja, a través de to
 
 **Ejemplo / Sintaxis de busqueda:**
 
-_Podemos hacer una búsqueda ingresando el código de acceso. Por ejemplo el del TP anterior:_ **"**NC\_045512"** en all databases o en una base de datos específica. _
+_Podemos hacer una búsqueda ingresando el código de acceso. Por ejemplo el del TP anterior:_ **"NC\_045512"** en all databases o en una base de datos específica. _
 
 _O bien usando palabras especificando campos y conectores lógicos._
 
