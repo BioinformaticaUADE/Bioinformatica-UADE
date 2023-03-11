@@ -1,6 +1,4 @@
-**TP 4: BLAST NCBI online y Luego la Terminal**
-
-**(y un poquito de gquery)**
+# TP 4: Alineamientos de secuencias II: Programacion dinámica y BLAST
 
 # Parte I: Alineamiento Global: Algoritmo de Needleman-Wunsch– Programación dinámica
 
