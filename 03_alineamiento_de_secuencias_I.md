@@ -132,8 +132,8 @@ Utilizando _**dotmatcher**_ y _**dottup**_ alineamos cada una de las dos isoform
 - DSCAM\_homo\_sapiens\_isoform2.fasta vs NP\_001380
 - DSCAM\_homo\_sapiens\_isoform1.fasta vs DSCAM\_homo\_sapiens\_isoform2.fasta
 
-  > 10. ¿Que interpretan de los resultados?
-  > 11. ¿Cuales son las diferencias entre las secuencias?
+> 10. ¿Que interpretan de los resultados?
+> 11. ¿Cuales son las diferencias entre las secuencias?
 
 ## Parte III: Alineamiento de a pares de ácidos nucleicos
 
@@ -142,29 +142,25 @@ Descargue las secuencias de los genomas de SARS-CoV-2 y SARS y compárelas usand
 Utilice -threshold 23 -windowsize 10, -threshold 23 -windowsize 77 y -threshold 37 -windowsize 77
 
 Para descargar las secuencias ejecute:
+```
+efetch -db nucleotide -id NC_004718.3 -format fasta > sars.fasta
 
-efetch -db nucleotide -id NC\_004718.3 -format fasta \>sars.fasta
-
-efetch -db nucleotide -id NC\_045512 -format fasta \> sars-cov2.fasta
-
+efetch -db nucleotide -id NC_045512 -format fasta > sars-cov2.fasta
+```
 Use distintos nombre para poder comparar los resultados usando la opción -goutfile:
-
+```
 dotmatcher -graph png -asequence sars-cov2.fasta -bsequence sars.fasta -threshold XX -windowsize XX -goutfile names
-
-Cambie names por el tipo de comparación que se está haciendo dependiendo del Windows size y el threshold usado.
+```
+Cambie **names** por el tipo de comparación que se está haciendo dependiendo del Windows size y el threshold usado.
 
 Ahora utilice dottup:
-
+```
 dottup -graph png -asequence sars-cov2.fasta -bsequence sars.fasta -goutfile dottup\_corona
-
-¿Que tipo de secuencias está usando?
-
-¿Que diferencias observa entre los distintos plots y a que adjudica esas diferencias?
-
-¿Qué sucede al aumentar el threshold?
-
-¿Qué regiones encuentra más similares? ¿Por qué cree que sucede esto?
-
-¿Cuáles serían los pasos a seguir para probar su hipótesis?
+```
+> 12. ¿Que tipo de secuencias está usando?
+> 13. ¿Que diferencias observa entre los distintos plots y a que adjudica esas diferencias?
+> 14. ¿Qué sucede al aumentar el threshold?
+> 15. ¿Qué regiones encuentra más similares? ¿Por qué cree que sucede esto?
+> 16. ¿Cuáles serían los pasos a seguir para probar su hipótesis?
 
 Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023
