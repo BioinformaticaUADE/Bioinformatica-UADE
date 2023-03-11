@@ -4,7 +4,7 @@
 
 _URLs que utilizaremos hoy:_
 
-**-Gquery**, es el "_google_" de todas las bases de datos de NCBI (National Center for Biotechnology Information).
+**Gquery**, es el "_google_" de todas las bases de datos de NCBI (National Center for Biotechnology Information).
 
 Permite buscar de manera **MUY** rápida, sencilla y/o compleja, a través de todas las bases de datos de NCBI (más de 40 DBs).
 
@@ -14,9 +14,9 @@ Permite buscar de manera **MUY** rápida, sencilla y/o compleja, a través de to
 
 [http://www.ncbi.nlm.nih.gov/gquery/](http://www.ncbi.nlm.nih.gov/gquery/)
 
-_ **Ejemplo / Sintaxis de busqueda:** _
+**Ejemplo / Sintaxis de busqueda:**
 
-_Podemos hacer una búsqueda ingresando el código de acceso. Por ejemplo el del TP anterior:_ _ **"** _ **NC\_045512** _ **" en all databases o en una base de datos específica.** _
+_Podemos hacer una búsqueda ingresando el código de acceso. Por ejemplo el del TP anterior:_ **"**NC\_045512**" en all databases o en una base de datos específica. _
 
 _O bien usando palabras especificando campos y conectores lógicos._
 
@@ -24,7 +24,7 @@ _**"Severe acute respiratory syndrome coronavirus 2" AND SARS-CoV-2[organism]**_
 
 _ **Conectores lógicos** _
 
-![](RackMultipart20230310-1-7kwfa1_html_e72a6be733ec5589.png)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/conditionals.jpg)
 
 ## Parte I: Uso de Entrez o GQuery. Buscar proteínas con un dominio que nos interesa.
 
