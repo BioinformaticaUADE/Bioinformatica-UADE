@@ -163,4 +163,10 @@ dottup -graph png -asequence sars-cov2.fasta -bsequence sars.fasta -goutfile dot
 > 15. ¿Qué regiones encuentra más similares? ¿Por qué cree que sucede esto?
 > 16. ¿Cuáles serían los pasos a seguir para probar su hipótesis?
 
-Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023
+<br />
+<br />
+
+___
+   ###### *Dr. Lucas L. Maldonado*
+   ###### *Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023*
+___
