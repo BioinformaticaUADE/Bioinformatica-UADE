@@ -144,7 +144,8 @@ Utilice -threshold 23 -windowsize 10, -threshold 23 -windowsize 77 y -threshold 
 Para descargar las secuencias ejecute:
 ```
 efetch -db nucleotide -id NC_004718.3 -format fasta > sars.fasta
-
+```
+```
 efetch -db nucleotide -id NC_045512 -format fasta > sars-cov2.fasta
 ```
 Use distintos nombre para poder comparar los resultados usando la opción -goutfile:
