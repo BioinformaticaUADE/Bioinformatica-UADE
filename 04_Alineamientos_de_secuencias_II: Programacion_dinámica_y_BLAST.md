@@ -135,4 +135,10 @@ blast? -db protein.fa -query \<Archivo proteina query\> -out blast\_results\_esp
 1. ¿Cuántos Hits obtiene?
 2. ¿Identifique las proteínas homólogas a su query y explique el criterio utilizado?
 
-Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023
+<br />
+<br />
+
+___
+   ###### *Dr. Lucas L. Maldonado*
+   ###### *Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023*
+___
