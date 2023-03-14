@@ -113,7 +113,7 @@ makeblastdb -help
 ```
 Para indexar (crear la "base de datos") el archivo mutifasta que se llama human\_proteome.faa (o protein.fa) ejecuten:
 ```
-makeblastdb -in archivo multifasta -dbtype prot -parse\_seqids
+makeblastdb -in archivo multifasta -dbtype prot -parse_seqids
 ```
 **Nota:** Cambien el nombre según el archivo que ustedes tengan
 
@@ -129,7 +129,7 @@ Para ver la ayuda recuerde que puede usar el parametro "-help"
 
 Para hacer la búsqueda con BLAST ejecutar el comando:
 ```
-blast? -db protein.fa -query \<Archivo proteina query\> -out blast\_results\_especie.tab -evalue 1.0E-6 -outfmt 6 -max\_target\_seqs 1000
+blast*_?_* -db protein.fa -query <Archivo proteina query> -out blast_results_especie.tab -evalue 1.0E-6 -outfmt 6 -max_target_seqs 1000
 ```
 > 4. ¿Cuántos Hits obtiene?
 > 5. ¿Identifique las proteínas homólogas a su query y explique el criterio utilizado?
