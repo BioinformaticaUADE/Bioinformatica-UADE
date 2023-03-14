@@ -97,7 +97,7 @@ Utilice GQuery para realizar la búsqueda de las proteínas llamadas _Adenylosuc
 
 Descargue la secuencia de aminoácidos del paso anterior mediante la línea de comandos de su máquina virtual y realice un BLAST contra la base de datos de proteínas humanas. Ayuda: puede utilizar **efetch.**
 
-1. ¿Cuál es el largo de la proteína en aminoácidos?
+> 3. ¿Cuál es el largo de la proteína en aminoácidos?
 
 Primero formateamos/Indexamos la base de datos:
 
@@ -108,16 +108,16 @@ Es decir, debemos usar todas las secuencias del archivo como base de datos para 
 Para crear la DB vamos a usar el comando **"makeblastdb"**
 
 Si queremos ver la ayuda para saber cómo se ejecuta el comando:
-
+```
 makeblastdb -help
-
+```
 Para indexar (crear la "base de datos") el archivo mutifasta que se llama human\_proteome.faa (o protein.fa) ejecuten:
-
+```
 makeblastdb -in archivo multifasta -dbtype prot -parse\_seqids
-
+```
 **Nota:** Cambien el nombre según el archivo que ustedes tengan
 
-Alineamos la secuencia query
+Alineamos la secuencia query:
 
 Vamos a alinear usando el comando **"blast"** y tomaremos como salida el formato tabular, después trabajaremos sobre esa salida para concluir cuáles de los hits obtenidos corresponden a homologos y cuáles no.
 
@@ -128,11 +128,11 @@ Fijemos el cutoff de un **e-value** \< 1.0E-6
 Para ver la ayuda recuerde que puede usar el parametro "-help"
 
 Para hacer la búsqueda con BLAST ejecutar el comando:
-
+```
 blast? -db protein.fa -query \<Archivo proteina query\> -out blast\_results\_especie.tab -evalue 1.0E-6 -outfmt 6 -max\_target\_seqs 1000
-
-1. ¿Cuántos Hits obtiene?
-2. ¿Identifique las proteínas homólogas a su query y explique el criterio utilizado?
+```
+> 4. ¿Cuántos Hits obtiene?
+> 5. ¿Identifique las proteínas homólogas a su query y explique el criterio utilizado?
 
 <br />
 <br />
