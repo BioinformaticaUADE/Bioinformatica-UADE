@@ -129,7 +129,7 @@ Para ver la ayuda recuerde que puede usar el parametro "-help"
 
 Para hacer la búsqueda con BLAST ejecutar el comando:
 ```
-blast *_?_* -db protein.fa -query <Archivo proteina query> -out blast_results_especie.tab -evalue 1.0E-6 -outfmt 6 -max_target_seqs 1000
+blast@ -db protein.fa -query <Archivo proteina query> -out blast_results_especie.tab -evalue 1.0E-6 -outfmt 6 -max_target_seqs 1000
 ```
 > 4. ¿Cuántos Hits obtiene?
 > 5. ¿Identifique las proteínas homólogas a su query y explique el criterio utilizado?
