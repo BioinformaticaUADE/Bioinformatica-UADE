@@ -39,10 +39,6 @@ ___
 |EXAMEN FINAL |19-jul |Final Regular  |
 
 
-|Los actos de **deshonestidad académica** o cualquier **situación de indisciplina** serán sancionados |
-| - |
-|según el **régimen disciplinario correspondiente**. |
-
 
 ___
    ###### *Dr. Lucas L. Maldonado*
