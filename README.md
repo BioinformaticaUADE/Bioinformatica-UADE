@@ -2,25 +2,20 @@
 
 ![](Aspose.Words.3611804b-8492-412a-89ee-72428d134868.001.png)
 
-**Cronograma** 
-
-
 
 |**Código** |**Asignatura** |**Facultad** |**Depto.** |**Horas** |
 | - | - | - | - | - |
 |3\.2.088 |BIOINFORMATICA |FAIN |DEBAL |68 |
 
-
-|**Docente** |**Categoría** |**Depto.** |**Hs. asignadas** |
-| - | - | - | :- |
-|Lucas L. Maldonado |Adjunto |DEBAL |68 |
-|Mahmud, Yamil |Ayudante 1° |DEBAL ||
-
+---
 
 |**Año** |**Cuatr.** |**Horario**  |**Semanas** |**Clase N°** |
 | - | - | - | - | - |
 |2023 |1er |Miercoles - 18:30 - 22:30 |17 |11422 |
 
+___
+
+## **Cronograma** 
 
 |` `**Clase** |**Fecha** |**Temas/Bibliografía/Actividades/Recursos/Evaluaciones** |
 | - | - | - |
@@ -30,9 +25,7 @@
 |4 |05-abr |Alineamientos de secuencias II: Algoritmos para alineamiento de secuencias apareado (Global  y  Local).  Introducción  al  “Dot  plot”  y  Programación  dinámica.  BLAST. Alineamientos Globales vs Locales: cuándo y por qué usa uno? Parámetros  de evaluación (E value, Score, etc.). ***TP. 4:** Ejercicios de  uso de programas: BLAST* |
 |5 |12-abr |Alineamiento de secuencias III: Matrices de puntaje, parte 2: Alineamientos multiple de secuancias (MSA). Análisis y clasificación de proteínas. Métodos y algoritmos de MSA. **TP. 5:** Ejercicios ONLINE y por linea de comandos |
 |6 |19-abr |Introducción  a  los  conceptos  de  Super-familias  y  sub-familias.  Identificacion  de Dominios y Patrones en secuencias de proteínas. Perfiles. Métodos de identificación y representación de patrones. Bases de Datos Secundarias. (PFAM, PROSITE). **TP. 6:** Ejercicios MSA y búsquedas de patrones en secuencias |
-
 |7 |26-abr |<p>Bioinformática estructural: Estructura de proteínas. Métodos de análisis de estructuras proteicas. Conceptos de dinámica molecular. </p><p>**TP 7:** Modelado por homología </p>|
-| - | - | :- |
 |8 |03-may |Puesta en común de TPs |
 |9 |10-may |**EXAMEN PARCIAL I** |
 |10 |17-may |NGS: Tecnologías de secuenciación. Datos de secuenciación. Tipos de formato de datos y control de Calidad de los datos. |
