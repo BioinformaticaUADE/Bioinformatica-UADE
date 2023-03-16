@@ -246,7 +246,7 @@ Este paso puede demorar unos minutos. Luego seleccionamos Y (yes) y comenzará l
 
 **Para observar los enviroments instalados ejecutar:**
 ```
-conda info –envs
+conda info --envs
 ```
 > 7. **¿Que enviroments encuentra instalados?**
 
