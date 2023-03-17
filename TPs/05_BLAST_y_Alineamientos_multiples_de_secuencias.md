@@ -33,48 +33,13 @@ Identifique la proteína de la base de datos de RefSeq y responda:
 
 | **Especie** | **Codigo de acceso del mRNA** | **Identificador único del mRNA** | **Codigo de acceso de la Proteina** | **Identificador único de la Proteina** | **Tamaño en aminoacidos** |
 | --- | --- | --- | --- | --- | --- |
-| chimpancé |
- |
- |
- |
- |
- |
-| cerdo |
- |
- |
- |
- |
- |
-| vaca |
- |
- |
- |
- |
- |
-| ratón |
- |
- |
- |
- |
- |
-| perro |
- |
- |
- |
- |
- |
-| sapo |
- |
- |
- |
- |
- |
-| Humano |
- |
- |
- |
- |
- |
+| chimpancé |  |  |  |  |  |
+| cerdo | | | | | |
+| vaca | | | | | |
+| ratón | | | | | |
+| perro | | | | | |
+| sapo | | | | | |
+| Humano | | | | | |
 
 Una vez identificadas las secuencias descárguelas usando efetch:
 
