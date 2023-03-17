@@ -3,15 +3,15 @@
 ## Parte 1: Explorar el proteoma Humano utilizando Blast (de forma local)
 
 Para realizar el TP5 crearemos la carpeta TP5 en:
-
+```
 /home/bioinformatica/Documentos/
-
+```
 Y trabajaremos con el proteoma humano y proteínas de distintas especies que descargaremos desde la DB genbank.
 
 **Nota:** Recuerden que los archivos se encuentran en la máquina virtual, dentro del directorio:
-
-/home/bioinformatica/Documentos/docs\_Bioinformatica
-
+```
+/home/bioinformatica/Documentos/docs_Bioinformatica
+```
 Pueden utilizar los archivos: _ **protein.fa** _ (proteoma humano completo que usaron las clases anteriores.
 
 ![](RackMultipart20230317-1-xisoad_html_a99d419a6f50009a.png)
@@ -24,16 +24,16 @@ Chimpancé (Pan troglodytes), Sus scrofa (cerdo), Bos taurus (vaca), Mus musculu
 
 Recuerde acotar los campos de búsqueda y colocar palabras compuestas entre comillas. Si no conoce los campos de búsqueda puede ayudarse yendo a "advance".
 
-1. ¿Cuántas proteínas aparecen en la búsqueda? (Escriba como realizó la búsqueda en Gquery remarcando cuales son los campos)
+> 1. ¿Cuántas proteínas aparecen en la búsqueda? (Escriba como realizó la búsqueda en Gquery remarcando cuales son los campos)
 
 Identifique la proteína de la base de datos de RefSeq y responda:
 
-1. ¿Cuál es el tamaño de la proteína?
-2. ¿Cuál es su identificador único y su número de acceso?
+> 2. ¿Cuál es el tamaño de la proteína?
+> 3. ¿Cuál es su identificador único y su número de acceso?
 
 | **Especie** | **Codigo de acceso del mRNA** | **Identificador único del mRNA** | **Codigo de acceso de la Proteina** | **Identificador único de la Proteina** | **Tamaño en aminoacidos** |
 | --- | --- | --- | --- | --- | --- |
-| chimpancé |  |  |  |  |  |
+| chimpancé | | | | | |
 | cerdo | | | | | |
 | vaca | | | | | |
 | ratón | | | | | |
@@ -42,9 +42,9 @@ Identifique la proteína de la base de datos de RefSeq y responda:
 | Humano | | | | | |
 
 Una vez identificadas las secuencias descárguelas usando efetch:
-
-efetch -db sequences -format fasta\_cds\_na -id "numero de acceso de la secuencia de la especie" \> query\__ **especie** _._fasta_
-
+```
+efetch -db sequences -format fasta_cds_na -id "numero de acceso de la secuencia de la especie" > query_especie.fasta
+```
 **Nota:** Cambiar la palabra especie por la que corresponda
 
 Primero crearemos la base de datos:
