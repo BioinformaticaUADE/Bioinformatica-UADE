@@ -138,7 +138,7 @@ muscle -in homologos\_prot.fasta -out msa.muscle
 ```
 **ClustalO:**
 ```
-clustalo -i homologos\_prot.fasta -o msa.clustal
+clustalo -i homologos_prot.fasta -o msa.clustal
 ```
 > 1. ¿Qué tipo de método utiliza el alineador múltiple que usó? ¿Cuántas veces recalculó el alineamiento?
 
