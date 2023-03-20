@@ -101,14 +101,14 @@ sort -k4 -h -r
 **Nota:** Pueden usar los comandos _cut_ y _sort, uniq_ y head miren el siguiente link como una guía o ejemplo:
 
 [https://stackoverflow.com/questions/21584727/using-linux-cut-sort-and-uniq](https://stackoverflow.com/questions/21584727/using-linux-cut-sort-and-uniq)
-
-cat results\_blastx.tab | sort -k4 -h -r | head -n21 | cut -f2 | sort | uniq \> ids.txt
-
+```
+cat results_blastx.tab | sort -k4 -h -r | head -n21 | cut -f2 | sort | uniq > ids.txt
+```
 Luego, con esa lista, proceder a extraer esas secuencias de la base de datos usando el siguiente comando (reemplazar el nombre de la base de datos y del archivo con la lista de gis que crearon recien según cada uno):
-
-blastdbcmd -db human\_proteome.faa -dbtype prot -entry\_batch \<Archivo con lista de gis/nombres de paralogos\> -out homologos\_prot.fasta
-
-1. ¿Que contiene el archivo **"**** homologos\_prot.fasta"?**
+```
+blastdbcmd -db human\_proteome.faa -dbtype prot -entry_batch <Archivo con lista de gis nombres de paralogos > -out homologos_prot.fasta
+```
+> 11. ¿Que contiene el archivo **"**** homologos\_prot.fasta"?**
 
 ## Parte 2: Alineamientos múltiples
 
@@ -117,65 +117,65 @@ Los objetivos de este trabajo son familiarizarse con el uso de programas de alin
 Primero prepararemos el enviroment que necesitamos para realizar el TP. Para ello usaremos Conda para generar el enviroment msa\_tools:
 
 **NOTA** : el enviroment msa\_tools ya está creado en la VM por lo que no debe ejecutarse los comandos de creación del enviroment.
-
-conda create -n msa\_tools extract\_fasta\_seq muscle clustalo jalview figtree
-
+```
+conda create -n msa_tools extract_fasta_seq muscle clustalo jalview figtree
+```
 Puede verificar que el nuevo enviroment fue creado haciendo:
-
+```
 conda info –envs
-
+```
 Para activar el nuevo enviroment ejecute:
-
-conda activate msa\_tools
-
+```
+conda activate msa_tools
+```
 Como aprendimos en la teoría los alineamientos múltiples se realizan entre proteínas que están relacionadas filogenéticamente o bien que son ortólogas u homologas ya que poseen un alto grado de similitud. Es decir, que tienen posiciones de aminoácidos altamente conservadas debido a que provienen de un ancestro en común. Todas aquellas regiones que estén altamente conservadas se supone que están asociadas a alguna función o estructura importante para el correcto funcionamiento y estructura nativa de la proteína.
 
 Ahora si, estamos listos para realizar el alineamiento múltiple. Para ello usaremos Muscle (https://www.drive5.com/muscle/) o CustalO (http://www.clustal.org/) bajo la siguiente sintaxis:
 
 **Muscle:**
-
+```
 muscle -in homologos\_prot.fasta -out msa.muscle
-
+```
 **ClustalO:**
-
+```
 clustalo -i homologos\_prot.fasta -o msa.clustal
-
-1. ¿Qué tipo de método utiliza el alineador múltiple que usó? ¿Cuántas veces recalculó el alineamiento?
+```
+> 1. ¿Qué tipo de método utiliza el alineador múltiple que usó? ¿Cuántas veces recalculó el alineamiento?
 
 Para visualizar el lineamiento usaremos el programa JalView (https://www.jalview.org/).
 
 Para ello escribimos en la terminal:
-
+```
 jalview -open msa.muscle
-
-1. ¿Alinearon bien las secuencias? ¿Qué regiones alinearon mejor?
-2. ¿En qué región supone que pueden encontrarse Dominios proteicos y por qué?
-3. ¿Qué significa el consenso?
-4. Puede obtener el logo de la secuencia haciendo click derecho sobre consenso y tildar LOGO. ¿Qué sucede con el Logo hacia el final del alineamiento y que significa?
+```
+> 2. ¿Alinearon bien las secuencias? ¿Qué regiones alinearon mejor?
+> 3. ¿En qué región supone que pueden encontrarse Dominios proteicos y por qué?
+> 4. ¿Qué significa el consenso?
+> 5. Puede obtener el logo de la secuencia haciendo click derecho sobre consenso y tildar LOGO. ¿Qué sucede con el Logo hacia el final del alineamiento y que significa?
 
 Puede colorear el alineamiento según la matriz de sustitución BLOSUM62. Para ello el color elija BLOSUM62 y diga que observa.
 
-![](RackMultipart20230317-1-xisoad_html_7a031ce0acde551c.png)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/blossum62_color.jpg)
 
 Ahora coloree el alineamiento según Zappo:
 
-1. ¿ ![](RackMultipart20230317-1-xisoad_html_c7784d7faf34fd56.png)
- Qué observa en el alineamiento?
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/zappo.jpg)
+> 6. ¿Qué observa en el alineamiento?
 
 Ahora realice la descarga _ **de las secuencias de proteínas** _ de la tabla de especies usando efetch:
-
-efetch -db sequences -format fasta\_cds\_aa -id "numero de acceso de la secuencia de la especie" \> query\_ **especie**.faa
-
-1. ¿Cuál es la diferencia con la línea de comandos para la descarga de secuencias de nucleótidos?
+```
+efetch -db sequences -format fasta_cds_aa -id "numero de acceso de la secuencia de la especie" > query_especie.faa
+```
+> 7. ¿Cuál es la diferencia con la línea de comandos para la descarga de secuencias de nucleótidos?
 
 Ahora repita el procedimiento de alineamiento múltiple con las proteínas que descargó.
 
-1. ¿Alinearon bien las secuencias? ¿Qué regiones alinearon mejor?
-2. ¿En qué región supone que pueden encontrarse Dominios proteicos y por qué?
+> 8. ¿Alinearon bien las secuencias? ¿Qué regiones alinearon mejor?
+> 9. ¿En qué región supone que pueden encontrarse Dominios proteicos y por qué?
 
 Realice un árbol filogenético y describa lo que observa.
 
-1. ¿Cómo describiría el resultado obtenido?
+> 10. ¿Cómo describiría el resultado obtenido?
 
 ## Parte 3: Preguntas repaso
 
@@ -189,19 +189,18 @@ Realice un árbol filogenético y describa lo que observa.
   4. tblastn
   5. tblastx
 
-1. ¿Qué resultado de blast (estadísticos) te dan un estimado de cuántos falsos positivos tienes entre tus "hits"?
+4. ¿Qué resultado de blast (estadísticos) te dan un estimado de cuántos falsos positivos tienes entre tus "hits"?
 
   1. E value
   2. Bit score
   3. Percent identity
   4. Percent positives
 
-1. Indicar que ocurriria con la cantidad de resultados positivos ("hits"), en cada uno de los casos, al cambiar los parámetros:
+5. Indicar que ocurriria con la cantidad de resultados positivos ("hits"), en cada uno de los casos, al cambiar los parámetros:
 
   1. No utilizar el filtro de baja complejidad (low-complexity filter)
   2. Cambiando el e-valor de 0.1 a 1
   3. Cambiando la matriz de sustitución de una PAM30 a una PAM70
 
-1. ¿Por qué creen que NO hay una "Basic Global Alignment Search Tool" (BGAST) como complemento a BLAST? ¿Sería util BGAST? ¿Qué ven como difícil a nivel computacional de un programa de alineamiento global pero del estilo BLAST?
+6. ¿Por qué creen que NO hay una "Basic Global Alignment Search Tool" (BGAST) como complemento a BLAST? ¿Sería util BGAST? ¿Qué ven como difícil a nivel computacional de un programa de alineamiento global pero del estilo BLAST?
 
-Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023
