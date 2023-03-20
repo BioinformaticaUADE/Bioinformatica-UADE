@@ -12,9 +12,9 @@ Y trabajaremos con el proteoma humano y proteínas de distintas especies que des
 ```
 /home/bioinformatica/Documentos/docs_Bioinformatica
 ```
-Pueden utilizar los archivos: _ **protein.fa** _ (proteoma humano completo que usaron las clases anteriores.
+Pueden utilizar los archivos: _**protein.fa**_ (proteoma humano completo que usaron las clases anteriores.
 
-![](RackMultipart20230317-1-xisoad_html_a99d419a6f50009a.png)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/docs_bioinfo.jpg)
 
 El BLAST ahora NO se realizará vía internet como en el TP anterior, sino de forma local en su propia máquina virtual!!!!!
 
@@ -54,49 +54,49 @@ Generaremos una "base de datos" a partir de un archivo multifasta para luego eje
 Para crear la DB vamos a usar el comando **"makeblastdb"**
 
 Si queremos ver la ayuda para saber cómo se ejecuta el comando:
-
+```
 makeblastdb -help
-
+```
 Para indexar (crear la "base de datos") el archivo mutifasta que se llama human\_proteome.faa (o protein.fa) ejecuten:
-
-makeblastdb -in \<archivo multifasta\> -dbtype prot -parse\_seqids
-
+```
+makeblastdb -in <archivo multifasta> -dbtype prot -parse_seqids
+```
 **Nota:** Cambien el nombre según el archivo que ustedes tengan
 
 Alineamos la secuencia query:
 
 Vamos a alinear usando el comando **"blast"** y tomaremos como salida el formato tabular, después trabajaremos sobre esa salida para concluir cuáles de los hits obtenidos corresponden a homologos y cuáles no.
 
-Fijemos el cutoff de un **e-value** \< 1.0E-6
+Fijemos el cutoff de un **e-value** < 1.0E-6
 
 **NOTA:** Para hacer el TP en clase usaremos solamente la secuencia del perro. Pueden practicar con las demás secuencias en su casa.
 
 Para ver la ayuda recuerde que puede usar el parametro "-help"
 
 Ahora corremos BLAST de forma local:
-
-Blast? -db human\_proteome.faa -query \<Archivo proteina query\> -out blast\_results\__ **especie** _.tab -evalue 1.0E-6 -outfmt 6 -max\_target\_seqs 1000
-
+```
+Blast? -db human_proteome.faa -query <Archivo proteina query> -out blast_results_especies.tab -evalue 1.0E-6 -outfmt 6 -max_target_seqs 1000
+```
 **Nota:** Nuevamente, cambien al nombre y la palabra especie del archivo según corresponda
 
-1. ¿Qué blast debe usar en este caso?
-2. ¿Para qué sirve el parámetro max\_target\_seqs? (Miren la ayuda del comando)
-3. ¿Cuántos hits se obtuvieron? ¿ **Qué es un** _ **hit** _ **para BLAST** en el archivo tabular?
-4. ¿Cuántas secuencias únicas obtenemos con ese e-value menor a 1?0E-6?
-5. ¿Cómo contamos secuencias únicas de esa salida?
-6. Si eliminamos el cutoff para el e-value, ¿Cambia el resultado?
+> 4. ¿Qué blast debe usar en este caso?
+> 5. ¿Para qué sirve el parámetro max\_target\_seqs? (Miren la ayuda del comando)
+> 6. ¿Cuántos hits se obtuvieron? ¿ **Qué es un** _ **hit** _ **para BLAST** en el archivo tabular?
+> 7. ¿Cuántas secuencias únicas obtenemos con ese e-value menor a 1?0E-6?
+> 8. ¿Cómo contamos secuencias únicas de esa salida?
+> 9. Si eliminamos el cutoff para el e-value, ¿Cambia el resultado?
 
 **Ayuda** :
-
-cut -f 2 blast\_results\__especie_.tab | fgrep -v "#" | sort -u | wc -l
-
+```
+cut -f 2 blast_results_especie_.tab | fgrep -v "#" | sort -u | wc -l
+```
 **Extraer secuencias de archivo multifasta:** Ahora vamos a identificar las proteinas homologas a nuestra sequencia query y las vamos extraer de la "base de datos" las secuencias correspondientes a todas las proteínas que alinearon localmente y contienen %id, long del alineamiento y score altos, etc (serían los putativos homologos). Primero tenemos que generar una lista con los nombres de las secuencias (puede ser el encabezado completo o solo el gi) a partir de la salida tabular de BLAST y luego a extraer con el comando **"blastdbcmd"**
 
 **Ayuda** : ordenar la tabla usando:
-
+```
 sort -k4 -h -r
-
-1. ¿Cómo hacen para obtener una lista de una sola columna que contenga solo el dato "gi"? Escribir comando usado.
+```
+> 10. ¿Cómo hacen para obtener una lista de una sola columna que contenga solo el dato "gi"? Escribir comando usado.
 
 **Nota:** Pueden usar los comandos _cut_ y _sort, uniq_ y head miren el siguiente link como una guía o ejemplo:
 
