@@ -179,28 +179,27 @@ Realice un árbol filogenético y describa lo que observa.
 
 ## Parte 3: Preguntas repaso
 
-1. ¿Qué valor de E (expect value) considerarías significativo en BLAST? 1, 0.05, o 10E–5? ¿Depende de algún otro factor? ¿Importa si es blastp o blastn?
-2. ¿Por qué BLAST balancea sensibilidad vs especificidad? ¿Qué asume BLAST en su algoritmo?
-3. Si tenés una secuencia de ADN proveniente de mRNA y quiero usar la base de datos de proteínas "nr" ("nr", the nonredundant database) para identificar la proteína más similar, ¿Qué programa uso?
+> 1. ¿Qué valor de E (expect value) considerarías significativo en BLAST? 1, 0.05, o 10E–5? ¿Depende de algún otro factor? ¿Importa si es blastp o blastn?
+> 2. ¿Por qué BLAST balancea sensibilidad vs especificidad? ¿Qué asume BLAST en su algoritmo?
+> 3. Si tenés una secuencia de ADN proveniente de mRNA y quiero usar la base de datos de proteínas "nr" ("nr", the nonredundant database) para identificar la proteína más similar, ¿Qué programa uso?
+> 	 - a. blastn
+> 	 - b. blastp
+> 	 - c. blastx
+> 	 - d. tblastn
+> 	 - e. tblastx
 
-  1. blastn
-  2. blastp
-  3. blastx
-  4. tblastn
-  5. tblastx
+> 4. ¿Qué resultado de blast (estadísticos) te dan un estimado de cuántos falsos positivos tienes entre tus "hits"?
 
-4. ¿Qué resultado de blast (estadísticos) te dan un estimado de cuántos falsos positivos tienes entre tus "hits"?
-
-  1. E value
-  2. Bit score
-  3. Percent identity
-  4. Percent positives
+> 	 - a. E value
+> 	 - b. Bit score
+> 	 - c. Percent identity
+> 	 - d. Percent positives
 
 5. Indicar que ocurriria con la cantidad de resultados positivos ("hits"), en cada uno de los casos, al cambiar los parámetros:
 
-  1. No utilizar el filtro de baja complejidad (low-complexity filter)
-  2. Cambiando el e-valor de 0.1 a 1
-  3. Cambiando la matriz de sustitución de una PAM30 a una PAM70
+  > 	 - a. No utilizar el filtro de baja complejidad (low-complexity filter)
+  > 	 - b. Cambiando el e-valor de 0.1 a 1
+  > 	 - c. Cambiando la matriz de sustitución de una PAM30 a una PAM70
 
-6. ¿Por qué creen que NO hay una "Basic Global Alignment Search Tool" (BGAST) como complemento a BLAST? ¿Sería util BGAST? ¿Qué ven como difícil a nivel computacional de un programa de alineamiento global pero del estilo BLAST?
+> 6. ¿Por qué creen que NO hay una "Basic Global Alignment Search Tool" (BGAST) como complemento a BLAST? ¿Sería util BGAST? ¿Qué ven como difícil a nivel computacional de un programa de alineamiento global pero del estilo BLAST?
 
