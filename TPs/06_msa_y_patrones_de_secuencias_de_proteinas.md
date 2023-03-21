@@ -10,31 +10,31 @@ efetch -db sequences -format fasta -id "numero de acceso de la secuencia de la e
 ```
 Realice la búsqueda de Dominios usando INTERPRO ([https://www.ebi.ac.uk/interpro/](https://www.ebi.ac.uk/interpro/)) el cual hace uso de varias bases de datos secundarias en simultaneo.
 
-![](RackMultipart20230320-1-n2s4oc_html_b19e401ab16a7e8c.png)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/interpro.jpg)
 
 Copie y pegue la secuencia de la proteína en el cuadro de secuencia. Luego clickee en los resultados observe la información que le da el resumen (overview):
 
-1. ¿Qué información le brinda?
+> 1. ¿Qué información le brinda?
 
 Clickee Entries y seleccione la de PFAM.
 
-1. ¿Qué Dominio encontró? ¿De qué proteína se trata? Indique la función.
-2. ¿Cuál es la posición en la que se encuentra el Dominio?
-3. Ingrese a la familia en summary:
-4. ¿Qué información relevante puede extraer?
-5. Los clanes son agrupaciones de familias de proteínas relacionadas que comparten un solo origen evolutivo, confirmado por comparaciones estructurales, funcionales, de secuencia y HMM.
-6. ¿A qué clan pertenece esta proteína y cuantas familias contiene?
-7. ¿Qué organismos contienen este tipo de Dominios?
+> 2. ¿Qué Dominio encontró? ¿De qué proteína se trata? Indique la función.
+> 3. ¿Cuál es la posición en la que se encuentra el Dominio?
+Ingrese a la familia en summary: 
+> 4. ¿Qué información relevante puede extraer?
+> 5. Los clanes son agrupaciones de familias de proteínas relacionadas que comparten un solo origen evolutivo, confirmado por comparaciones estructurales, funcionales, de secuencia y HMM.
+> 6. ¿A qué clan pertenece esta proteína y cuantas familias contiene?
+> 7. ¿Qué organismos contienen este tipo de Dominios?
 
 Ahora realice la búsqueda en la base de datos PROSITE ([https://prosite.expasy.org/](https://prosite.expasy.org/)).
 
-1. ¿Qué proteína tuvo hit? ¿Coincide con PFAM?
+> 8. ¿Qué proteína tuvo hit? ¿Coincide con PFAM?
 
 Ingrese al código PROSITE y conteste:
 
-1. ¿En qué organismos se encuentra? ¿Cuál es la expresión regular del Dominio?
-2. Identifique el LOGO del dominio.
-3. Identifique la matriz del perfil que hay detrás del dominio encontrado
+> 9. ¿En qué organismos se encuentra? ¿Cuál es la expresión regular del Dominio?
+> 10. Identifique el LOGO del dominio.
+> 11. Identifique la matriz del perfil que hay detrás del dominio encontrado
 
 ## Parte 2
 
@@ -56,9 +56,9 @@ hmmpress Pfam-A.hmm
 ```
 hmmscan --pfamtblout results_pfam.txt --domtblout results_domains.txt --tblout results_hmmer_table.txt Pfam-A.hmm ornitorrinco.faa > results_hmmer.txt
 ```
-1. ¿Qué interpreta del output en cada archivo?
-2. ¿En qué posición se encuentra el patrón encontrado? ¿Coincide con el encontrado en PFAM? ¿Por qué?
-3. ¿Cuáles residuos están mejor ponderados?
+> 1. ¿Qué interpreta del output en cada archivo?
+> 2. ¿En qué posición se encuentra el patrón encontrado? ¿Coincide con el encontrado en PFAM? ¿Por qué?
+> 3. ¿Cuáles residuos están mejor ponderados?
 
 ## Parte 3
 
@@ -80,9 +80,9 @@ Ahora puede realizar la búsqueda usando hmmscan:
 ```
 hmmscan --pfamtblout results_msa_pfam.txt --domtblout results_msa_domains.txt --tblout results_msa_hmmer_table.txt tp6.hmm ornitorrinco.faa > results_msa_hmmer.txt
 ```
-1. ¿Qué interpreta del output?
-2. ¿En qué posición se encuentra el patrón encontrado? ¿Coincide con el encontrado en PFAM? ¿Por qué?
-3. ¿Cuáles residuos están mejor ponderados?
+> 1. ¿Qué interpreta del output?
+> 2. ¿En qué posición se encuentra el patrón encontrado? ¿Coincide con el encontrado en PFAM? ¿Por qué?
+> 3. ¿Cuáles residuos están mejor ponderados?
 
 <br />
 <br />
