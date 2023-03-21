@@ -70,7 +70,7 @@ Guarde el nuevo alineamiento como edited\_msa.fasta y cierre jalview.
 
 Ahora generará el modelo HMM que usará para encontrar patrones en la secuencia del ornitorrinco. Para ello ejecute:
 ````
-hmmbuild tp6.hmm edited\_msa.fasta
+hmmbuild tp6.hmm edited_msa.fasta
 ````
 indexe el modelo:
 ```
@@ -84,4 +84,10 @@ hmmscan --pfamtblout results_msa_pfam.txt --domtblout results_msa_domains.txt --
 2. ¿En qué posición se encuentra el patrón encontrado? ¿Coincide con el encontrado en PFAM? ¿Por qué?
 3. ¿Cuáles residuos están mejor ponderados?
 
-Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023
+<br />
+<br />
+
+___
+   ###### *Dr. Lucas L. Maldonado*
+   ###### *Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023*
+___
