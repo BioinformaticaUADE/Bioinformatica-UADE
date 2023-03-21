@@ -5,9 +5,9 @@
 Utilice GQuery para realizar la búsqueda de las proteínas, factores de transcripción "transcription factor 19" de Ornitorrinco "Ornithorhynchus anatinus" como realizó en el TP anterior.
 
 Descargue la secuencia:
-
-efetch -db sequences -format fasta -id "numero de acceso de la secuencia de la especie" \> ornitorrinco.fasta
-
+```
+efetch -db sequences -format fasta -id "numero de acceso de la secuencia de la especie" > ornitorrinco.fasta
+```
 Realice la búsqueda de Dominios usando INTERPRO ([https://www.ebi.ac.uk/interpro/](https://www.ebi.ac.uk/interpro/)) el cual hace uso de varias bases de datos secundarias en simultaneo.
 
 ![](RackMultipart20230320-1-n2s4oc_html_b19e401ab16a7e8c.png)
@@ -39,21 +39,23 @@ Ingrese al código PROSITE y conteste:
 ## Parte 2
 
 La búsqueda de Dominios usando PFAM, también puede realizarse de manera local. Para ello debemos descagar la base de datos PFAM.
-
-wget [https://ftp.ebi.ac.uk/pub/databases/Pfam/current\_release/Pfam-A.hmm.gz](https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz)
-
+```
+wget [https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz](https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz)
+```
 Una vez descargada la descomprimimos de la siguiente manera:
-
+```
 gzip -d Pfam-A.hmm.gz
-
+```
 El paso hmmpress es necesario para que hmmscan funcione.
 
 Se crean cuatro archivos: hmmfile.h3m, hmmfile.h3i, hmmfile.h3f y hmmfile.h3p. El archivo hmmfile.h3m contiene los HMM de perfil y su anotación en formato binario. El archivo hmmfile.h3i es un índice SSI para el archivo hmmfile.h3m. El archivo hmmfile.h3f contiene estructuras de datos precalculadas para el filtro heurístico rápido (el filtro MSV). El archivo hmmfile.h3p contiene estructuras de datos precalculadas para el resto de cada perfil.
-
+```
 hmmpress Pfam-A.hmm
+```
 
-hmmscan --pfamtblout results\_pfam.txt --domtblout results\_domains.txt --tblout results\_hmmer\_table.txt Pfam-A.hmm ornitorrinco.faa \> results\_hmmer.txt
-
+```
+hmmscan --pfamtblout results_pfam.txt --domtblout results_domains.txt --tblout results_hmmer_table.txt Pfam-A.hmm ornitorrinco.faa > results_hmmer.txt
+```
 1. ¿Qué interpreta del output en cada archivo?
 2. ¿En qué posición se encuentra el patrón encontrado? ¿Coincide con el encontrado en PFAM? ¿Por qué?
 3. ¿Cuáles residuos están mejor ponderados?
@@ -67,17 +69,17 @@ Abra el alineamiento de proteínas realizado en el TP anterior con jalview y edi
 Guarde el nuevo alineamiento como edited\_msa.fasta y cierre jalview.
 
 Ahora generará el modelo HMM que usará para encontrar patrones en la secuencia del ornitorrinco. Para ello ejecute:
-
+````
 hmmbuild tp6.hmm edited\_msa.fasta
-
+````
 indexe el modelo:
-
+```
 hmmpress tp6.hmm
-
+```
 Ahora puede realizar la búsqueda usando hmmscan:
-
-hmmscan --pfamtblout results\_msa\_pfam.txt --domtblout results\_msa\_domains.txt --tblout results\_msa\_hmmer\_table.txt tp6.hmm ornitorrinco.faa \> results\_msa\_hmmer.txt
-
+```
+hmmscan --pfamtblout results_msa_pfam.txt --domtblout results_msa_domains.txt --tblout results_msa_hmmer_table.txt tp6.hmm ornitorrinco.faa > results_msa_hmmer.txt
+```
 1. ¿Qué interpreta del output?
 2. ¿En qué posición se encuentra el patrón encontrado? ¿Coincide con el encontrado en PFAM? ¿Por qué?
 3. ¿Cuáles residuos están mejor ponderados?
