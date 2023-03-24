@@ -28,9 +28,8 @@ _**Conectores lógicos**_
 
 ## Parte I: Uso de Entrez o GQuery. Buscar proteínas con un dominio que nos interesa.
 
-Para llegar hasta el gen DSCAM (Down syndrome cell adhesion molecule) del genoma humano en el cromosoma 21, nos interesa el dominio Immunoglobulin:
-
-> 1. Utilizando Entrez o GQuery, encuentra cuántos genes humanos tienen un dominio _Immunoglobulin_.
+Para llegar hasta el gen DSCAM (Down syndrome cell adhesion molecule) del genoma humano en el cromosoma 21, nos interesa el dominio Immunoglobulin. Utilizando Entrez o GQuery, encuentra:
+> 1. cuántos genes humanos tienen un dominio _Immunoglobulin_.
 > 2. ¿Cómo sabemos si está bien eso? ¿Uso la base nucleótidos o genes? ¿Donde ingreso la búsqueda, que me conviene?
  
 Tip: Usar ENTREZ de NCBI.
@@ -58,7 +57,9 @@ Ver dentro de genes, ESTs, etc.
 
 ![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/gquery.jpg)
 
-## Parte II: Ahora vamos a trabajar con el cDNA AF217525. Utilizar Gquery para obtener la secuencia FASTA y encontrar la siguiente información
+## Parte II: Ahora vamos a trabajar con el cDNA AF217525. Utilizar Gquery para obtener la secuencia FASTA.
+
+Encontrar la siguiente información
 
 ![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/cdna.jpg)
 
