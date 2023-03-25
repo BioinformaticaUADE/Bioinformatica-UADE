@@ -75,7 +75,7 @@ Ud. Puede acceder a los resultados pre-calculados de Phyre en:
 
 Descargue el archivo comprimido para con todos los datos:
 
-![](img2_tp7)
+![]([img2_tp7](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/Imagen2_tp7.png))
 
 En la pagina de los resultados de Phyre2 explore y conteste:
 
