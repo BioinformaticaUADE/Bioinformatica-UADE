@@ -149,7 +149,8 @@ Para el alineamiento de multiple estructuras puede utilizar el comando:
 ```
 extra_fit all
 ```
-![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/Imagen8_tp7.png) Ahora identificaremos todos aquellos residuos importantes en estabilizar el cofactor en el interior de la proteína. Aquellos residuos localizados a 5 o 10 Aº cumplen un rol importante en este sentido.
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/Imagen8_tp7.png)
+Ahora identificaremos todos aquellos residuos importantes en estabilizar el cofactor en el interior de la proteína. Aquellos residuos localizados a 5 o 10 Aº cumplen un rol importante en este sentido.
 
 Localizado el cofactor lo seleccionamos y lo nombramos como selección. Para eso debemos clickear en el átomo, luego en Action à rename selection le damos el nombre "cofactor".
 
