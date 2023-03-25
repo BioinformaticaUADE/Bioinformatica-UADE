@@ -19,7 +19,7 @@ conda activate ngs_env
 
 Formato _fastq_:
 
-![](RackMultipart20230325-1-6oqy3l_html_d6322effafa39ba1.jpg)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/fastq_format.jpg)
 
 En la carpeta de **Onedrive** o en "docs\_Bioinformatica" encontrará los archivos necesarios para la realización del TP.
 
@@ -32,7 +32,7 @@ cp /home/bioinformatica/Documentos/docs_Bioinformatica/archivos_TP8.tar.gz /home
 ```
 Para descomprimir desde TP7 ejecutamos:
 ```
-tar -xzvf archivos\_TP8.tar.gz
+tar -xzvf archivos_TP8.tar.gz
 ```
 En la carpeta **datos\_01** encontraremos los archivo **fastq** que vamos a usar. Este archivo fastq es una corrida de secuenciación (no cadena específica) de un plásmido de una bacteria:
 ```
