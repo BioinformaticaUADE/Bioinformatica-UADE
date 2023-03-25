@@ -80,7 +80,7 @@ Descargue el archivo comprimido para con todos los datos:
 En la pagina de los resultados de Phyre2 explore y conteste:
 
 > 1. ¿Cuantos templates se usaron? ¿Cuál fue el mejor template?
-> > 2. ¿De qué proteína se trata? ¿Cuál fue la confianza, el % de identidad y cobertura del modelado? ¿Qué región del template fue utilizada?
+> 2. ¿De qué proteína se trata? ¿Cuál fue la confianza, el % de identidad y cobertura del modelado? ¿Qué región del template fue utilizada?
 
 Para analizar el modelo clickee en _View investigator results_
 
