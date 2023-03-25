@@ -187,7 +187,8 @@ Desde la consola puede colorear la superficie según los residuos polares y no p
 ```
 from pymol import cmd
 ```
-````
+
+```
 cmd.select ('nonpolar','resn met or resn phe or resn pro or resn trp or resn val or resn leu or resn ile or resn ala')
 ```
 
