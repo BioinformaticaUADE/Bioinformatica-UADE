@@ -37,7 +37,7 @@ MKTVFLLGFLFLYSIGVFSEEDKKDVKYGTIIGIDLGTTYSCVGVYKNGRVEIIANDQGNRITPSYVAFSGDSGERLIGD
 ```
 Pegue la secuencia, complete los campos requeridos y haga click en Build Model.
 
-![](img1_tp7)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/Imagen1_tp7.png)
 
 Ud. Puede acceder a los resultados pre-calculados de SwissModel en:
 
