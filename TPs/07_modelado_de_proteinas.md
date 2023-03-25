@@ -84,7 +84,7 @@ En la pagina de los resultados de Phyre2 explore y conteste:
 
 Para analizar el modelo clickee en _View investigator results_
 
-![](img3_tp7)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/Imagen3_tp7.png)
 
 ProQ2 predice el llamado puntaje S para cada residuo individual (obtendrá un gráfico sobre este puntaje cuando haga clic en el enlace de cada puntaje). También cuenta con su propio servidor para evaluar las estructuras: [http://duffman.it.liu.se/ProQ2/](http://duffman.it.liu.se/ProQ2/)
 
@@ -103,13 +103,13 @@ PyMOL es un sistema de visualización molecular patrocinado por el usuario sobre
 
 Ahora realizaremos una evaluación final de los modelos generados y sus templates mediante alineamiento de estructuras. Para comenzar ejecute el programa Pymol.
 
-![](img4_tp7)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/Imagen4_tp7.png)
 
 Para abrir los archivos de los modelos diríjase a File à open
 
 Allí busque los modelos generados anteriormente por ambos métodos y sus respectivos templates.
 
-![](img5_tp7)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/Imagen5_tp7.png)
 
 De los modelos generados por SWISS-MODEL abra el modelo 1 y 2 y sus respectivos templates.
 
@@ -123,7 +123,7 @@ Observará que las estructuras aparecen superpuestas.
 
 Puede cambiar el color de las moléculas clickeando en "C"
 
-![](img6_tp7)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/Imagen6_tp7.png)
 
 A: Actions
 S: Show
@@ -137,7 +137,7 @@ También puede colorear por estructura secundaria.
 
 Puede mostrar la secuencia de la proteína seleccionando "S" en:
 
-![](img7_tp7)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/Imagen7_tp7.png)
 
 Puede acercar o alejar la imagen con el botón derecho del mouse y desplazando el mouse hacia arriba o hacia abajo.
 
@@ -149,7 +149,7 @@ Para el alineamiento de multiple estructuras puede utilizar el comando:
 ```
 extra_fit all
 ```
-![](img8_tp7) Ahora identificaremos todos aquellos residuos importantes en estabilizar el cofactor en el interior de la proteína. Aquellos residuos localizados a 5 o 10 Aº cumplen un rol importante en este sentido.
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/Imagen8_tp7.png) Ahora identificaremos todos aquellos residuos importantes en estabilizar el cofactor en el interior de la proteína. Aquellos residuos localizados a 5 o 10 Aº cumplen un rol importante en este sentido.
 
 Localizado el cofactor lo seleccionamos y lo nombramos como selección. Para eso debemos clickear en el átomo, luego en Action à rename selection le damos el nombre "cofactor".
 
@@ -171,7 +171,7 @@ get_distance /model_01//_/ZN`4/ZN, /model_01//A/PRO`174/CG
 ```
 Para visualizar y calcular la distancia al anillo ir a Wizard à Measurement a Distances  Distance to rings y seleccionar las moléculas cuya distancia se desea medir.
 
-![](img9_tp7)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/Imagen9_tp7.png)
 
 Ahora observaremos la estructura tridimensional y superficie de la proteína.
 
@@ -181,7 +181,7 @@ Luego en el nuevo objecto seleccione **S** how as\_surface
 
 Puede otorgar transparencia a la superficie de la proteína en settings de manera que le permitirá observar la estructura secunda dentro de la superficie:
 
-![](img10_tp7)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/Imagen10_tp7.png)
 
 Desde la consola puede colorear la superficie según los residuos polares y no polares:
 ```
@@ -198,7 +198,7 @@ En color de la nueva selección otorgue dos colores que permitan discernir las d
 
 Por ejemplo:
 
-![](img11_tp7)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/Imagen11_tp7.png)
 
 > 4. ¿Qué observa en la superficie de la proteína?
 
