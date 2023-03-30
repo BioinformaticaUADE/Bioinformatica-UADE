@@ -4,7 +4,7 @@
 
 Trabajaremos con los datos de:
 ```
-/home/bioinformatica/Documentos/docs\_Bioinformatica
+/home/bioinformatica/Documentos/docs_Bioinformatica
 ```
 Si tiene restringidos los permisos utilice chown para poder acceder a los archivos de la siguiente manera:
 
@@ -14,7 +14,7 @@ Desde el directorio:
 ```
 Ejecute:
 ```
-sudo chown -R 755 docs\_Bioinformatica
+sudo chown -R 755 docs_Bioinformatica
 ```
 e ingrese la contraseña cuando se lo solicite. Recuerde que la contraseña es:
 
