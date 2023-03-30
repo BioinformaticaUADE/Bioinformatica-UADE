@@ -156,7 +156,7 @@ Cambie **names** por el tipo de comparación que se está haciendo dependiendo d
 
 Ahora utilice dottup:
 ```
-dottup -graph png -asequence sars-cov2.fasta -bsequence sars.fasta -goutfile dottup\_corona
+dottup -graph png -asequence sars-cov2.fasta -bsequence sars.fasta -goutfile dottup_corona
 ```
 > 12. ¿Que tipo de secuencias está usando?
 > 13. ¿Que diferencias observa entre los distintos plots y a que adjudica esas diferencias?
