@@ -51,6 +51,7 @@ Existen softwares especializados para calcular las métricas necesarias y evalua
 Desde la carpeta " **01\_ensamblado"** , ejecutamos la siguiente línea de comando:
 ```
 quast.py short_assembly/contigs.fasta -o quast_short
+```
 
 ```
 quast.py long_assembly/contigs.fasta -o quast_long
