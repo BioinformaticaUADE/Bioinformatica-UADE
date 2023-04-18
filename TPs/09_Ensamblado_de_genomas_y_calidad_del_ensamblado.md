@@ -2,12 +2,12 @@
 
 En el TP9 utilizaremos datos de NGS. Por lo tanto, necesitaremos instalar las herramientas bioinformáticas adecuadas para la manipulación y el análisis de los datos de NGS.
 
-Comenzaremos creando el enviroment _ **ngs\_env.** _
+Comenzaremos creando el enviroment _**ngs\_env.**_
 
 Para ello ejecutaremos conda:
-
-conda create -n ngs\_env samtools bamtools bedtools cap3 quast fastqc spades emboss exonerate chromosomer blast entrez-direct sra-tools emboss bwa bowtie2 busco
-
+```
+conda create -n ngs_env samtools bamtools bedtools cap3 quast fastqc spades emboss exonerate chromosomer blast entrez-direct sra-tools emboss bwa bowtie2 busco
+```
 Para activar el nuevo environment ejecutar:
 
 conda activate ngs\_env
@@ -19,11 +19,13 @@ conda activate ngs\_env
 En la carpeta datos\_02 encontrará los archivos de lecturas para realizar el ensamblado _de novo_ usando Spades ([_https://cab.spbu.ru/software/spades/_](https://cab.spbu.ru/software/spades/)). Realizaremos el ensamblado con y sin lecturas de long reads provenientes de PacBio.
 
 ¿Qué tipo de lecturas identifica?
+```
+spades.py --pe1-1 L1_map_map_R1.fq --pe1-2 L1_map_map_R2.fq --pe2-1 L2_map_map_R1.fq --pe2-2 L2_map_map_R2.fq --s1 L1_single.fq --s2 L2_single.fq --careful -t 2 -k 21,33,55,77,99 -o short_assembly
+```
 
-spades.py --pe1-1 L1\_map\_map\_R1.fq --pe1-2 L1\_map\_map\_R2.fq --pe2-1 L2\_map\_map\_R1.fq --pe2-2 L2\_map\_map\_R2.fq --s1 L1\_single.fq --s2 L2\_single.fq --careful -t 2 -k 21,33,55,77,99 -o short\_assembly
-
-spades.py --pe1-1 L1\_map\_map\_R1.fq --pe1-2 L1\_map\_map\_R2.fq --pe2-1 L2\_map\_map\_R1.fq --pe2-2 L2\_map\_map\_R2.fq --s1 L1\_single.fq --s2 L2\_single.fq --pacbio long\_reads.fasta --careful -t 2 -k 21,33,55,77,99 -o long\_assembly
-
+```
+spades.py --pe1-1 L1_map_map_R1.fq --pe1-2 L1_map_map_R2.fq --pe2-1 L2_map_map_R1.fq --pe2-2 L2_map_map_R2.fq --s1 L1_single.fq --s2 L2_single.fq --pacbio long_reads.fasta --careful -t 2 -k 21,33,55,77,99 -o long_assembly
+```
 ¿Qué significan cada uno de los parámetros?
 
 Observar que se crearon las carpetas **short\_assembly y long\_assembly**. En dicha carpeta encontraremos el producto del ensamblado en un archivo llamado **contigs.fasta.**
