@@ -9,9 +9,9 @@ Para ello ejecutaremos conda:
 conda create -n ngs_env samtools bamtools bedtools cap3 quast fastqc spades emboss exonerate chromosomer blast entrez-direct sra-tools emboss bwa bowtie2 busco
 ```
 Para activar el nuevo environment ejecutar:
-
-conda activate ngs\_env
-
+```
+conda activate ngs_env
+```
 **NOTA:** El enviroment ya esta instalado en sus VMs
 
 ### _Parte I:_ Ensamblado de genomas
@@ -31,15 +31,15 @@ spades.py --pe1-1 L1_map_map_R1.fq --pe1-2 L1_map_map_R2.fq --pe2-1 L2_map_map_R
 Observar que se crearon las carpetas **short\_assembly y long\_assembly**. En dicha carpeta encontraremos el producto del ensamblado en un archivo llamado **contigs.fasta.**
 
 Verificar el número de contigs de los ensamblados. Para ello ejecutar el siguiente comando para cada archivo fasta:
-
-grep -c "\>" assembly\*/contigs.fasta
-
+```
+grep -c ">" assembly*/contigs.fasta
+```
 1. ¿Cuántos contigs contiene cada uno de los ensamblados?, ¿cuál de ellos tiene menor número de contigs? ¿Cuál es la diferencia con el archivo scaffolds.fasta?
 
 Ahora analizaremos el ensamblado estadísticamente evaluando el número de contigs y tamaño de contigs de forma manual:
-
+```
 infoseq contigs.fasta | awk '{OFS="\t"; print $3, $6, $7}' | sort -k2hr | grep "NODE"
-
+```
 Puede usar head al final de la línea para ver las primeras líneas
 
 1. ¿Qué información brinda la salida de este comando?
@@ -49,11 +49,12 @@ Puede usar head al final de la línea para ver las primeras líneas
 Existen softwares especializados para calcular las métricas necesarias y evaluar la calidad de los ensamblados. En esta práctica utilizaremos el software Quality Assessment Tool for Genome Assemblies (QUAST: [http://bioinf.spbau.ru/quast](http://bioinf.spbau.ru/quast))
 
 Desde la carpeta " **01\_ensamblado"** , ejecutamos la siguiente línea de comando:
+```
+quast.py short_assembly/contigs.fasta -o quast_short
 
-quast.py short\_assembly/contigs.fasta -o quast\_short
-
-quast.py long\_assembly/contigs.fasta -o quast\_long
-
+```
+quast.py long_assembly/contigs.fasta -o quast_long
+```
 o bien puede correr Quast sobre los 2 archivos en simultaneo.
 
 En la carpeta quast\_short y quast\_long encontraremos los resultados de la evaluación.
@@ -73,19 +74,21 @@ Responda:
 7. Basado en el tamaño de contigs, ¿Cuál es el mejor ensamblado?
 8. Completar la siguiente tabla:
 
-|
- | N50 | N75 | Nº de Contigs | Tamaño de contig más largo |
-| --- | --- | --- | --- | --- |
-| Short assembly |
- |
- |
- |
- |
-| Long assembly |
- |
- |
- |
- |
+
+| N50 | N75 | Nº de Contigs | Tamaño de contig más largo |
+| --- | --- | --- | --- |
+| Short assembly | | | | |
+| Long assembly | | | | |
+
+| **Especie** | **Codigo de acceso del mRNA** | **Identificador único del mRNA** | **Codigo de acceso de la Proteina** | **Identificador único de la Proteina** | **Tamaño en aminoacidos** |
+| --- | --- | --- | --- | --- | --- |
+| chimpancé | | | | | |
+| cerdo | | | | | |
+| vaca | | | | | |
+| ratón | | | | | |
+| perro | | | | | |
+| sapo | | | | | |
+| Humano | | | | | |
 
 9. Basado en estos análisis ¿Cuál es el mejor ensamblado?
 10. ¿Qué otros análisis restarían realizar para completar la evaluación del ensamblado?
