@@ -86,4 +86,11 @@ Responda:
 9. Basado en estos análisis ¿Cuál es el mejor ensamblado?
 10. ¿Qué otros análisis restarían realizar para completar la evaluación del ensamblado?
 
-Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023
+
+<br />
+<br />
+
+___
+   ###### *Dr. Lucas L. Maldonado*
+   ###### *Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023*
+___
