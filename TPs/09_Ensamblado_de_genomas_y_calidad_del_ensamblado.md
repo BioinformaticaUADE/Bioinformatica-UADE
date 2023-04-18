@@ -76,8 +76,8 @@ Responda:
 > 13. Completar la siguiente tabla:
 
 
-| N50 | N75 | Nº de Contigs | Tamaño de contig más largo |
-| --- | --- | --- | --- |
+| --- | N50 | N75 | Nº de Contigs | Tamaño de contig más largo |
+| --- | --- | --- | --- | --- |
 | Short assembly | | | | |
 | Long assembly | | | | |
 
