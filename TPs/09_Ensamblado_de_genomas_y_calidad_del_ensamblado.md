@@ -81,15 +81,7 @@ Responda:
 | Short assembly | | | | |
 | Long assembly | | | | |
 
-| **Especie** | **Codigo de acceso del mRNA** | **Identificador único del mRNA** | **Codigo de acceso de la Proteina** | **Identificador único de la Proteina** | **Tamaño en aminoacidos** |
-| --- | --- | --- | --- | --- | --- |
-| chimpancé | | | | | |
-| cerdo | | | | | |
-| vaca | | | | | |
-| ratón | | | | | |
-| perro | | | | | |
-| sapo | | | | | |
-| Humano | | | | | |
+
 
 9. Basado en estos análisis ¿Cuál es el mejor ensamblado?
 10. ¿Qué otros análisis restarían realizar para completar la evaluación del ensamblado?
