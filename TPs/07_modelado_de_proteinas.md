@@ -41,7 +41,7 @@ Pegue la secuencia, complete los campos requeridos y haga click en Build Model.
 
 Ud. Puede acceder a los resultados pre-calculados de SwissModel en:
 
-[https://swissmodel.expasy.org/interactive/2BPQ8L/models/](https://swissmodel.expasy.org/interactive/2BPQ8L/models/)
+[https://swissmodel.expasy.org/interactive/2BPQ8L/models/](https://swissmodel.expasy.org/interactive/JV8Tyb/)
 
 La evaluación de la calidad del modelo es algo muy importante. El SWISS-MODEL realiza una **evaluación global** que permite establecer scores comparables entre modelos alternativos para la misma proteína y una evaluación de la estereoquímica a nivel local a través de gráficos por residuo. SWISS-MODEL presenta diferentes scores y gráficos de evaluación del modelo. **QMEAN4** es una función de scoring compuesta que usa 4 potenciales estadísticos: un potencial que evalúa ángulos de torsión a lo largo de tres residuos consecutivos (local), un potencial de interacción coarse grain basado en los CB de cada residuo, un potencial de interacción all-atom y un potencial de solvataciń que evalúa el grado de ocultamiento de los residuos. El score va de 0 a 1, siendo mejor el modelo cuanto mayor score presente. Los valores de Z-score de QMEAN permiten comparar el modelo con estructuras de referencia de tamaño similar resueltas experimentalmente con alta resolución. Da cuenta de contactos nativos en el modelo. Modelos de baja calidad tienen valores de Z-score muy negativos.
 
@@ -71,7 +71,7 @@ Para realizar el modelado usando Phyre2, ud. Debe ingresar a la pagina [http://w
 
 Ud. Puede acceder a los resultados pre-calculados de Phyre en:
 
-[http://www.sbg.bio.ic.ac.uk/phyre2/webscripts/jobmonitor.cgi?jobid=a4f01717d76bf321](http://www.sbg.bio.ic.ac.uk/phyre2/webscripts/jobmonitor.cgi?jobid=a4f01717d76bf321)
+[http://www.sbg.bio.ic.ac.uk/phyre2/webscripts/jobmonitor.cgi?jobid=a4f01717d76bf321](http://www.sbg.bio.ic.ac.uk/phyre2/webscripts/jobmonitor.cgi?jobid=3accd75252adce7f)
 
 Descargue el archivo comprimido para con todos los datos:
 
