@@ -86,6 +86,23 @@ Responda:
 > 14. Basado en estos análisis ¿Cuál es el mejor ensamblado?
 > 15. ¿Qué otros análisis restarían realizar para completar la evaluación del ensamblado?
 
+### _Parte II:_ Análisis de ensamblados – Calidad y contaminación
+
+En esta sección analizaremos 3 ensamblados de [Caenorhabditis remanei](https://blobtoolkit.genomehubs.org/view/Caenorhabditis%20remanei/dataset/NMWX01/table#Datasets) previamente ensamblados, filtrados y analizados por el consorcio europeo y analizaremos de manera visual varios parámetros a tener en cuenta a la hora de definir la calidad del ensamblado. Entre los mas importantes a considerar nos enfocaremos en %GC, Depth coverage, Cumulative length (SPAN), Clasificación taxonómica, BUSCO.
+
+| Acc number | N50 | Span | Nº de Contigs | BUSCO |
+| --- | --- | --- | --- | --- |
+| -| | | | |
+| -| | | | |
+| -| | | | |
+
+Explore cada uno de ellos y responda:
+> 1.	¿Qué puede decir a nivel taxonómico?
+> 2.	¿Qué puede decir a nivel de su Depth coverage y %GC?
+> 3.	¿Qué puede decir a nivel de la integridad de los genomas?
+> 4.	¿Puede observar contaminación en la muestra?
+> 5.	¿En base a todos los parámetros analizados cual considera que es el mejor ensamblado?
+
 
 <br />
 <br />
