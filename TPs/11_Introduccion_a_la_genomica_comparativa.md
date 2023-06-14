@@ -41,23 +41,23 @@ samtools sort -o mapped.sorted.bam mapped.bam
 ```
 Mediante el siguiente comando podemos calcular estadísticas de mapeo y propiedades de las lecturas y bibliotecas de secuenciación.
 ```
-bamtools stats -in mapped.sorted.bam -insert \> stats.txt
+bamtools stats -in mapped.sorted.bam -insert > stats.txt
 ```
 Para observar el archivo stats.txt usar "less". Para salir presione la letra "q"
 
 Luego se marcan las duplicaciones de secuencia producto de artefactos de la PCR.
 ```
-picard SortSam INPUT=mapped.sorted.bam OUTPUT=mapped.sbc.bam SORT\_ORDER=coordinate VALIDATION\_STRINGENCY=LENIENT
+picard SortSam INPUT=mapped.sorted.bam OUTPUT=mapped.sbc.bam SORT_ORDER=coordinate VALIDATION_STRINGENCY=LENIENT
 ```
 ```
-picard MarkDuplicates INPUT=mapped.sbc.bam OUTPUT=mapped.mkd.bam METRICS\_FILE=merged.sbc.metrics VALIDATION\_STRINGENCY=SILENT
+picard MarkDuplicates INPUT=mapped.sbc.bam OUTPUT=mapped.mkd.bam METRICS_FILE=merged.sbc.metrics VALIDATION_STRINGENCY=SILENT
 ```
 Ahora podemos calcular la cobertura y profundidad del mapeo de secuencias:
 ```
-bedtools genomecov -bga -ibam mapped.mkd.bam \> coverage\_a.txt
+bedtools genomecov -bga -ibam mapped.mkd.bam > coverage_a.txt
 ```
 ```
-bedtools genomecov -d -ibam mapped.mkd.bam \> coverage\_b.txt
+bedtools genomecov -d -ibam mapped.mkd.bam > coverage_b.txt
 ```
 Inspeccione los archivos stats.txt, coverage\_a.txt y coverage\_b.txt:
 
@@ -72,44 +72,53 @@ _ **Nota** __: El punto 2 lo realizaremos la próxima clase que aprenderemos R._
 Ahora realizaremos el llamado de variantes genéticas usando bcftools. BCFtools es un programa para llamar variantes y manipular archivos en el formato de variant calling (VCF) y su contraparte binaria BCF. Todos los comandos funcionan de forma transparente tanto con VCF como con BCF, tanto sin comprimir como con BGZF.
 
 Realizaremos el llamado de variantes crudas sin filtrar con el siguiente comando:
-
-bcftools mpileup -d 20000 -f ref.fa mapped.mkd.bam | bcftools call -Amv -Ob | bcftools +fill-tags \> raw\_variants.vcf
-
+```
+bcftools mpileup -d 20000 -f ref.fa mapped.mkd.bam | bcftools call -Amv -Ob | bcftools +fill-tags > raw_variants.vcf
+```
 Posteriormente aplicaremos filtros básicos para quedarnos con las variantes que cumplen ciertos criterios y de esta forma otorgan mayor confianza a los datos:
 
 **Soft Filtering:**
-
-cat raw\_variants.vcf | bcftools filter -s "lowQual" -i 'DP\>=20 && MQ\>=20 && QUAL\>=20' \> SF\_varcalls.vcf
-
+```
+cat raw_variants.vcf | bcftools filter -s "lowQual" -i 'DP>=20 && MQ>=20 && QUAL>=20' > SF_varcalls.vcf
+```
 **Hard Filtering:**
-
-cat raw\_variants.vcf | bcftools filter -i 'DP\>=20 && MQ\>=20 && QUAL\>=20' \> HF\_varcalls.vcf
-
-1. Inspeccione los archivos VCF generados:
-2. ¿Qué diferencias encuentra entre ellos? ¿Qué criterios de filtrado se usaron? ¿Dónde observa esa información en el VCF?
-3. ¿Qué tipo de variantes reconoce?
-4. ¿Cuántas posiciones quedaron luego de aplicar el filtro?
+```
+cat raw_variants.vcf | bcftools filter -i 'DP>=20 && MQ>=20 && QUAL>=20' > HF_varcalls.vcf
+```
+Inspeccione los archivos VCF generados:
+> 3. ¿Qué diferencias encuentra entre ellos? ¿Qué criterios de filtrado se usaron? ¿Dónde observa esa información en el VCF?
+> 4. ¿Qué tipo de variantes reconoce?
+> 5. ¿Cuántas posiciones quedaron luego de aplicar el filtro?
 
 ### Parte II: Visualización De Los Datos
 
 A continuación exploraremos de un modo gráfico el contig con los reads mapeados sobre la referencia y la anotación génica asociada. Para ello utilizaremos el programa "Integrative Genomics Viewer" (IGV [http://software.broadinstitute.org/software/igv/](http://software.broadinstitute.org/software/igv/)) que permite ingresar secuencias en formato fasta y cargarle información de la localización génica y alinemiento de lecturas, etc. Para una mejor interpretación de la visualización puede consultar la guía del programa IGV ([http://software.broadinstitute.org/software/igv/DefaultDisplay](http://software.broadinstitute.org/software/igv/DefaultDisplay)).
 
 Primero creamos el índice del archivo bam necesario para la visualizacion con IGV:
-
+```
 samtools index mapped.mkd.bam
-
+```
 Para eso escribimos en la consola "igv". En Genome clickeamos en "load from file" y seleccionamos nuestro archivo " **ref.fa**". Luego cargamos el archivo con las anotaciones "file.gff". Para ello en File clickeamos en "load from file" seleccionamos el archivo de anotación. Luego en la ventana anotación hacemos click derecho y elegimos "expanded". Podemos hacer zoom en la parte superior derecha.
 
 A continuación, cargamos el archivo " **mapped.mkd.bam**". De igual manera clickeamos en "load from file" y seleccionamos el archivo bam. Explore las secuencias, genes y coverage. No olvide hacer zoom.
 
-1. Muévase a la posición 20000 y describa lo que observa. ¿Qué tipo de variante genética encuentra? ¿Se está afectando alguna unidad génica?
+Muévase a la posición 20000 y describa lo que observa:
+> 6. ¿Qué tipo de variante genética encuentra?
+> 7. ¿Se está afectando alguna unidad génica?
 
 Ahora cargue los archivos VCF generados.
 
-1. ¿Qué observa? Qué variantes son las más confiables ahora?
-2. Vaya a la posición "E.canG7\_contigs\_6081:307,520-307,865". Identifique las variantes que pasaron los filtros y responda:
-3. ¿Cuál es su heterocigocidad?
-4. ¿Qué tipo de variantes presenta?
-5. ¿Qué otra información relevante encuentra?
+> 8. ¿Qué observa? Qué variantes son las más confiables ahora?
+> 9. Vaya a la posición "E.canG7\_contigs\_6081:307,520-307,865". Identifique las variantes que pasaron los filtros y responda:
+> 10. ¿Cuál es su heterocigocidad?
+> 11. ¿Qué tipo de variantes presenta?
+> 12. ¿Qué otra información relevante encuentra?
 
-Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023
+
+<br />
+<br />
+
+___
+   ###### *Dr. Lucas L. Maldonado*
+   ###### *Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023*
+___
