@@ -103,7 +103,7 @@ Al cargar el archivo, este programa automáticamente analiza los 6 posibles marc
 
 Ahora cargaremos los archivos de anotación generados por **augustus** y por _ **cpgplot.** _
 
-![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/img3_tp10.jpg)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/img3_tp10.png)
 
 En **File** seleccionamos **read Entry** y cargamos el archivo **augustus\_pred.out** y **CpG.gff.**
 
