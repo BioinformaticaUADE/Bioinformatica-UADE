@@ -95,15 +95,15 @@ art
 ```
 cargar el archivo fasta scaffold\_4.fasta
 
-![](RackMultipart20230614-1-t27iob_html_7c2033270d0c3011.png)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/img1_tp10.jpg)
 
 Al cargar el archivo, este programa automáticamente analiza los 6 posibles marcos de lectura y los presenta en la pantalla:
 
-![](RackMultipart20230614-1-t27iob_html_78f2469cda2e49af.png)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/img2_tp10.jpg)
 
 Ahora cargaremos los archivos de anotación generados por **augustus** y por _ **cpgplot.** _
 
-![](RackMultipart20230614-1-t27iob_html_1b16b8e44fa83f2b.png)
+![](https://github.com/BioinformaticaUADE/Bioinformatica-UADE/blob/main/img/img3_tp10.jpg)
 
 En **File** seleccionamos **read Entry** y cargamos el archivo **augustus\_pred.out** y **CpG.gff.**
 
