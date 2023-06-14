@@ -123,3 +123,10 @@ Visualice las estructuras genómicas:
 > 9. ¿Cuál podría ser su función?
 
 
+<br />
+<br />
+
+___
+   ###### *Dr. Lucas L. Maldonado*
+   ###### *Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023*
+___
