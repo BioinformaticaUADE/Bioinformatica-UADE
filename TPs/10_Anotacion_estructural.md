@@ -23,23 +23,30 @@ Las primeras cuatro opciones son seleccionar la traducción de la proteína o la
 
 Valores:
 
-0 - ( **Translation** of regions between STOP codons)
-1 - ( **Translation** of regions between START and STOP codons)
-2 - ( **Nucleic** sequences between STOP codons)
-3 - ( **Nucleic** sequences between START and STOP codons)
-4 - (Nucleotides flanking START codons)
-5 - (Nucleotides flanking initial STOP codons)
-6 - (Nucleotides flanking ending STOP codons)
+ 0 - ( **Translation** of regions between STOP codons)
+ 
+ 1 - ( **Translation** of regions between START and STOP codons)
+ 
+ 2 - ( **Nucleic** sequences between STOP codons)
+ 
+ 3 - ( **Nucleic** sequences between START and STOP codons)
+ 
+ 4 - (Nucleotides flanking START codons)
+ 
+ 5 - (Nucleotides flanking initial STOP codons)
+ 
+ 6 - (Nucleotides flanking ending STOP codons)
 
-1. ¿Cuál de las primeras opciones considera adecuada para un output de proteínas para este organismo?
+
+> 1. ¿Cuál de las primeras opciones considera adecuada para un output de proteínas para este organismo?
 
 El nombre de las secuencias ORF se construye a partir del nombre de la secuencia de entrada con un carácter de subrayado ('\_') y un número único del ORF que se encuentra adjunto. La descripción de la secuencia del ORF de salida se construye a partir de la descripción de la secuencia de entrada con las posiciones inicial y final del ORF antepuestas. El número único adjunto al nombre se utiliza simplemente para crear nuevos nombres de secuencia únicos, no implica ninguna información adicional que indique ningún orden, posición o hebra de sentido de los ORF. Si el ORF se ha encontrado en el sentido inverso, entonces la posición inicial será menor que la posición final y la descripción también contendrá '( **REVERSE SENSE** )'.
 ```
 getorf -minsize ? -sequence scaffold\_4.fasta -find ? -outseq orfs.fa
 ```
-1. ¿Cuántos ORF en sentido forward tienen?
-2. ¿Y en sentido reverse?
-3. ¿Cuál de todos los marco de lectura (ORF) es el que más chances tiene de ser correcto? ¿Por qué?
+> 2. ¿Cuántos ORF en sentido forward tienen?
+> 3. ¿Y en sentido reverse?
+> 4. ¿Cuál de todos los marco de lectura (ORF) es el que más chances tiene de ser correcto? ¿Por qué?
 
 (Nota: Pueden filtrar por tamaño de ORF usando el parámetro _minsize_)
 
@@ -50,17 +57,17 @@ Ahora utilizaremos el programa Augustus ([http://augustus.gobics.de/](http://aug
 AUGUSTUS es un programa de predicción génica para eucariotas. Se puede utilizar como programa ab initio, lo que significa que basa su predicción únicamente en la secuencia. AUGUSTUS también puede incorporar informacion sobre la estructura genética que provienen de fuentes extrínsecas como EST, , alineamientos de proteínas y alineamientos de genomas.
 
 Actualmente, AUGUSTUS ha sido entrenado para predecir genes en distintas especies de organismos:
-
+```
 augustus --species=help
-
-1. ¿Cuáles de las especies le parece la mas indicada para usar en la predicción?
-
-augustus --cds=on --species=fly --genemodel=complete --gff3=on draft\_assembly.fasta --UTR=on \> augustus\_pred.out
-
+```
+> 1. ¿Cuáles de las especies le parece la mas indicada para usar en la predicción?
+```
+augustus --cds=on --species=fly --genemodel=complete --gff3=on draft_assembly.fasta --UTR=on > augustus_pred.out
+```
 El archivo **augustus\_pred.out** contiene la salida del programa augustus.
 
-1. ¿Qué componentes identifica en el archivo?
-2. ¿Cuántos genes fueron predichos?
+> 2. ¿Qué componentes identifica en el archivo?
+> 3. ¿Cuántos genes fueron predichos?
 
 Verifique el parámetro "--genemodel=complete".
 
