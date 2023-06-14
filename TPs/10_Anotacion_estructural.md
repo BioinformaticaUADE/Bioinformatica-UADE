@@ -71,28 +71,28 @@ El archivo **augustus\_pred.out** contiene la salida del programa augustus.
 
 Verifique el parámetro "--genemodel=complete".
 
-1. ¿Qué ocurriría si usa otra opcion?
+> 4. ¿Qué ocurriría si usa otra opcion?
 
 Puede obtener las secuencias de los genes usando herramientas provistas por el programa augustus
-
-getAnnoFasta.pl augustus\_pred.out --seqfile=scaffold\_4.fasta
-
-1. ¿Qué tipo de secuencias identifica? ¿Cua es la diferencia entre cada uno de estos archivos que se generaron?
+```
+getAnnoFasta.pl augustus_pred.out --seqfile=scaffold_4.fasta
+```
+> 5. ¿Qué tipo de secuencias identifica? ¿Cua es la diferencia entre cada uno de estos archivos que se generaron?
 
 La localizacion de islas CpG es muy útil como patrón para la identificación de genes ya que usualmente las Islas CpG se localizan upstream o solapando muchos genes ya que contienen sitios de unión a factores de transcripción. Usaremos el programa _ **cpgplot** _ para identificar su localización.
 
 Identificar las islas CpG usando el programa _ **cpgplot** _.
-
-cpgplot -sequence scaffold\_4.fasta -window 70 -outfeat CpG.gff
-
-1. ¿Cuántas islas identifica?
+```
+cpgplot -sequence scaffold_4.fasta -window 70 -outfeat CpG.gff
+```
+> 6. ¿Cuántas islas identifica?
 
 Ahora visualizaremos el scaffold anotado en Artemis ([https://www.sanger.ac.uk/tool/artemis/](https://www.sanger.ac.uk/tool/artemis/)) que permite como entrada los archivos de anotación generados.
 
 Para abrirlo ejecutar en la terminal:
-
+```
 art
-
+```
 cargar el archivo fasta scaffold\_4.fasta
 
 ![](RackMultipart20230614-1-t27iob_html_7c2033270d0c3011.png)
@@ -116,14 +116,10 @@ Vaya a la posición:
 
 Visualice las estructuras genómicas:
 
-1. ¿Cómo está conformado el gen? ¿Cuántos CDS lo componen? ¿Qué significan las líneas que unes los rectángulos?
+> 7. ¿Cómo está conformado el gen? ¿Cuántos CDS lo componen? ¿Qué significan las líneas que unes los rectángulos?
 
-1. ¿Poseen Islas CpG asociadas?
+> 8. ¿Poseen Islas CpG asociadas?
 
-1. ¿Cuál podría ser su función?
+> 9. ¿Cuál podría ser su función?
 
-Puede hacer una búsqueda directa en Pfam para contestar esta pregunta:
 
-![](RackMultipart20230614-1-t27iob_html_b4483d514f655ae6.png)
-
-Bioinformática, Licenciatura en Biotecnología, Universidad Argentina de la Empresa, 2023
