@@ -17,7 +17,7 @@ ___
 
 ## **Cronograma** 
 
-| **Clase** | **Fecha** |**Temas-Bibliografía-Actividades-Recursos-Evaluaciones** |
+| **Clase** | **   Fecha   ** |**Temas-Bibliografía-Actividades-Recursos-Evaluaciones** |
 | - | - | - |
 |1 |08-ago |Introducción a la bioinformática. Presentación de los contenidos y temas de la materia y estructura de las clases. Introducción a Linux para Bioinformáticos y formatos de archivos. ***TP. 1:** Linux parte1, Familiarizarse con Ubuntu y la Terminal de Linux. Utilizar comandos comunes en Bioinformática, por ejemplo, GREP. Edición de secuencias con el formato adecuado para utilizar los comandos de EMBOSS en la Terminal y conocer formatos de archivos comunes en BI* |
 |2 |15-ago |Introducción al diseño y manejo de bases de datos de biología molecular. Motores de búsqueda, ENTREZ, Google. Base de datos de genomas particulares. Bases de datos (SQL  o PostrgeSQL)  y  esquema  (Chado).  ***TP.  2:**  Usar  bases  de  datos  vía web. Ejercicios usando GenBank y Gquery.* |
