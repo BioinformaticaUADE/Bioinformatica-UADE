@@ -1,4 +1,4 @@
-# Bioinformatica UADE
+# Bioinformatica UADE (Cronograma aproximado)
 
 ![](Aspose.Words.3611804b-8492-412a-89ee-72428d134868.001.png)
 
