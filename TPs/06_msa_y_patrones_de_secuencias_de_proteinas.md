@@ -39,8 +39,10 @@ Ingrese al código PROSITE y conteste:
 ## Parte 2
 
 La búsqueda de Dominios usando PFAM, también puede realizarse de manera local. Para ello debemos descagar la base de datos PFAM.
+[Pfam-A.hmm.gz](https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz)
+
 ```
-wget [https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz](https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz)
+wget --no-check-certificate https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz
 ```
 Una vez descargada la descomprimimos de la siguiente manera:
 ```
